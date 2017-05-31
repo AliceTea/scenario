@@ -1,4 +1,6 @@
 import sys
+import re
+import time
 from mininet.topo import Topo
 from mininet.net import Mininet
 from mininet.util import irange,dumpNodeConnections
@@ -22,11 +24,18 @@ class SimpleTopo(Topo):
 
 if __name__ == '__main__':
 
+    f = open(str(sys.argv[1]),'r')
     
     setLogLevel('info')
     topo = SimpleTopo()
     net = Mininet(topo)
     net.start()
     dumpNodeConnections(net.hosts)
-    net.iperf(net.hosts,'UDP',str(sys.argv[1]),None,50,8080)
+    lines = f.readlines()
+    for line in lines:
+        m = re.findall(r'\w+',line)
+        print str(m[0])
+        print int(m[1])
+        net.iperf(net.hosts,'UDP',str(m[0]),None,int(m[1]),8080)
+         
     net.stop()
