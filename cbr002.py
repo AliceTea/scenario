@@ -45,4 +45,5 @@ if __name__ == '__main__':
         print int(m[1])
         net.iperf(net.hosts,'UDP',str(m[0]),None,int(m[1]),8080)
          
+    time.sleep(10)
     net.stop()
