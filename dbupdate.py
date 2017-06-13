@@ -1,5 +1,4 @@
 import sys
-import os
 import time
 import MySQLdb
 import re
@@ -7,8 +6,16 @@ import re
 time = time.time()
 print int(time)
 
-ovs_lookup=re.escape(str(open(sys.argv[1]).readlines()))
-floodlight=re.escape(str(open(sys.argv[2]).readlines()))
+#ovs_lookup=re.escape(str(open(sys.argv[1]).readlines()))
+#floodlight=re.escape(str(open(sys.argv[2]).readlines()))
+ovs_lookup = ""
+floodlight = ""
+for line in open(sys.argv[2]).readlines():
+    ovs_lookup = ovs_lookup + line
+for line in open(sys.argv[1]).readlines():
+    floodlight = floodlight + line
+#floodlight=re.escape(floodlight)
+floodlight=floodlight.replace('\'','')
 
 db = MySQLdb.connect("jxtang.me","root","pl,okm123","lablog")
 
