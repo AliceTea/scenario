@@ -24,6 +24,38 @@ class SimpleTopo(Topo):
         link = self.addLink(h1,sw);
         link = self.addLink(h2,sw);
 
+class ComplexTopo(SimpleTopo):
+
+    def __init__(
+            self,
+            filename='',
+            **opts
+            ):
+        if filename == '':
+            super(ComplexTopo,self).__init__()
+        else:
+
+
+    def parseconf(self,filename):
+        conf = open(filename,'r')
+        lines = conf.readlines()
+        topoflag = 0
+        for line in lines:
+            if topoflag == 1:
+                #parse configuration
+                nodes = re.findall(r'h\d+->s\d+',line)
+                hosts = re.findall(r'h\d+',nodes[0])
+                switches = re.findall(r's\d+',nodes[0])
+                if nodes.__len__() == 1 and switches.__len__() == 1:
+                    host = self.addHost(str(hosts[0]))
+                    sw = self.addSwitch(str(switches[0]))
+                    self.addLink(host,sw)
+                    
+
+            if line == 'topo:':
+                topoflag = 1
+                
+
 
 if __name__ == '__main__':
 
