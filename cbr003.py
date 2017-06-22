@@ -86,12 +86,15 @@ class ComplexTopo(SimpleTopo):
                     hosts = []
                     hosts.append(net.get(traffic.find('src').text))
                     hosts.append(net.get(traffic.find('dst').text))
-                    port = int(traffic.find('dst_port').text)
                     baudwidth = traffic.find('baudwidth').text
-                    period = int(traffic.find('period').text)
-                    protocol = traffic.find('protocol').text
+                    period = traffic.find('period').text
                     print 'ok'
-                    net.iperf(hosts, protocol, baudwidth, None, period, port)
+#                    net.iperf(hosts, protocol, baudwidth, None, period, port)
+                    hosts[1].cmd('iperf -u -s&')
+                    hosts[0].cmd("iperf -u -c " + str(hosts[1].IP()) + " " \
+                                 + "-b "+ baudwidth + " "\
+                                 + "-t "+ period + " "\
+                                 +"&")
             time.sleep(1)
             tick = tick + 1
 

@@ -48,4 +48,15 @@
 		<period>10</period>
 		<protocol>UDP</protocol>
 	</traffic>
+
+	<traffic>
+		<type>cbr</type>
+		<src>h3</src>
+		<dst>h6</dst>
+		<dst_port>9999</dst_port>
+		<baudwidth>10M</baudwidth>
+		<start_time>5</start_time>
+		<period>10</period>
+		<protocol>UDP</protocol>
+	</traffic>
 </collection>
