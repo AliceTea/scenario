@@ -9,6 +9,7 @@ from mininet.util import irange,dumpNodeConnections
 from mininet.log import setLogLevel
 from mininet.node import RemoteController
 import xml.etree.ElementTree as ET
+from graphviz import Digraph
 
 class SimpleTopo(Topo):
 
@@ -36,7 +37,8 @@ class ComplexTopo(SimpleTopo):
         if filename == '':
             super(ComplexTopo,self).__init__()
         else:
-            self.parseconf(filename)
+#            self.parseconf(filename)
+            pass
 
     def parseconf(self,filename):
         tree = ET.parse(filename)
@@ -119,6 +121,29 @@ class ComplexTopo(SimpleTopo):
             tick = tick + 1
 
 
+    def drawtopo(self,filename):
+        tree = ET.parse(filename)
+        root = tree.getroot()
+
+        dot = Digraph(comment='topo overview')
+
+        for host in root.findall('host'):
+            hostname = host.find('name').text
+            dot.node(hostname,hostname)
+
+
+        for switch in root.findall('switch'):
+            swname = switch.find('name').text
+            dot.node(swname,swname,shape='box')
+
+        for link in root.findall('link'):
+            peers = link.findall('peer')
+            dot.edge(peers[0].text,peers[1].text,None,dir='none')
+
+        dot.render('topo.gv',view=True)
+
+
 if __name__ == '__main__':
 
     tmp = ComplexTopo('/home/jason/workspace/scenario/xml-demo.xml')
+    tmp.drawtopo('/home/jason/workspace/scenario/xml-demo.xml')
