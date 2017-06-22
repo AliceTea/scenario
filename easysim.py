@@ -83,18 +83,38 @@ class ComplexTopo(SimpleTopo):
             if traffics.has_key(str(tick)):
                 l = traffics[str(tick)]
                 for traffic in l:
-                    hosts = []
-                    hosts.append(net.get(traffic.find('src').text))
-                    hosts.append(net.get(traffic.find('dst').text))
-                    baudwidth = traffic.find('baudwidth').text
-                    period = traffic.find('period').text
-                    print 'ok'
-#                    net.iperf(hosts, protocol, baudwidth, None, period, port)
-                    hosts[1].cmd('iperf -u -s&')
-                    hosts[0].cmd("iperf -u -c " + str(hosts[1].IP()) + " " \
-                                 + "-b "+ baudwidth + " "\
-                                 + "-t "+ period + " "\
-                                 +"&")
+                    if traffic.find('type').text == 'cbr':
+                        hosts = []
+                        hosts.append(net.get(traffic.find('src').text))
+                        hosts.append(net.get(traffic.find('dst').text))
+                        baudwidth = traffic.find('baudwidth').text
+                        period = traffic.find('period').text
+                        print 'ok'
+    #                    net.iperf(hosts, protocol, baudwidth, None, period, port)
+                        hosts[1].cmd('iperf -u -s&')
+                        hosts[0].cmd("iperf -u -c " + str(hosts[1].IP()) + " " \
+                                     + "-b "+ baudwidth + " "\
+                                     + "-t "+ period + " "\
+                                     +"&")
+                    elif traffic.find('type').text == 'vbr':
+                        hosts = []
+                        hosts.append(net.get(traffic.find('src').text))
+                        hosts.append(net.get(traffic.find('dst').text))
+                        source_add = traffic.find('source_add').text
+                        dst_port = traffic.find('dst_port').text
+                        source_type = traffic.find('source_type').text
+                        if source_type == 'file':
+                            hosts[1].cmd('vlc-wrapper udp://@:' + dst_port + "&")
+                            hosts[0].cmd('vlc-wrapper '\
+                                         + "-vvv " + " "\
+                                         + source_add + " "\
+                                         + "--sout " + "udp://" + str(hosts[1].IP()) + ":" + dst_port + " "\
+                                       #  +"&")
+                                         )
+                            print 'ok'
+
+                    elif traffic.find('type').text == 'web':
+                        pass
             time.sleep(1)
             tick = tick + 1
 
