@@ -37,8 +37,7 @@ class ComplexTopo(SimpleTopo):
         if filename == '':
             super(ComplexTopo,self).__init__()
         else:
-#            self.parseconf(filename)
-            pass
+            self.parseconf(filename)
 
     def parseconf(self,filename):
         tree = ET.parse(filename)
@@ -145,5 +144,5 @@ class ComplexTopo(SimpleTopo):
 
 if __name__ == '__main__':
 
-    tmp = ComplexTopo('/home/jason/workspace/scenario/xml-demo.xml')
-    tmp.drawtopo('/home/jason/workspace/scenario/xml-demo.xml')
+    tmp = ComplexTopo(sys.argv[1])
+    tmp.drawtopo(sys.argv[1])

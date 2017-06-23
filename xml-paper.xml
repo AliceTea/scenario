@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<collection shelf="configuration">
+	<switch><name>s1</name><OFVersion>13</OFVersion></switch>
+	<switch><name>s2</name><OFVersion>13</OFVersion></switch>
+	<switch><name>s3</name><OFVersion>13</OFVersion></switch>
+	<switch><name>s4</name><OFVersion>13</OFVersion></switch>
+	<switch><name>s5</name><OFVersion>13</OFVersion></switch>
+	<switch><name>s6</name><OFVersion>13</OFVersion></switch>
+	<switch><name>s7</name><OFVersion>13</OFVersion></switch>
+
+	<host><name>h1</name></host>
+	<host><name>h2</name></host>
+	<host><name>h3</name></host>
+	<host><name>h4</name></host>
+	<host><name>h5</name></host>
+	<host><name>h6</name></host>
+	<host><name>h7</name></host>
+	<host><name>h8</name></host>
+
+	<controller>
+		<name>c0</name>
+		<type>remote</type>
+		<listen_port>6653</listen_port>
+	</controller>
+
+	<link><peer>s1</peer><peer>s2</peer></link>
+	<link><peer>s1</peer><peer>s3</peer></link>
+	<link><peer>s2</peer><peer>s4</peer></link>
+	<link><peer>s2</peer><peer>s5</peer></link>
+	<link><peer>s3</peer><peer>s6</peer></link>
+	<link><peer>s3</peer><peer>s7</peer></link>
+	<link><peer>s4</peer><peer>h1</peer></link>
+	<link><peer>s4</peer><peer>h2</peer></link>
+	<link><peer>s5</peer><peer>h3</peer></link>
+	<link><peer>s5</peer><peer>h4</peer></link>
+	<link><peer>s6</peer><peer>h5</peer></link>
+	<link><peer>s6</peer><peer>h6</peer></link>
+	<link><peer>s7</peer><peer>h7</peer></link>
+	<link><peer>s7</peer><peer>h8</peer></link>
+	
+	<traffic>
+		<type>cbr</type>
+		<src>h1</src>
+		<dst>h8</dst>
+		<dst_port>9999</dst_port>
+		<baudwidth>10M</baudwidth>
+		<start_time>0</start_time>
+		<period>4</period>
+		<protocol>UDP</protocol>
+	</traffic>
+
+	<traffic>
+		<type>cbr</type>
+		<src>h1</src>
+		<dst>h8</dst>
+		<dst_port>9999</dst_port>
+		<baudwidth>10M</baudwidth>
+		<start_time>10</start_time>
+		<period>64</period>
+		<protocol>UDP</protocol>
+	</traffic>
+
+	<traffic>
+		<type>cbr</type>
+		<src>h3</src>
+		<dst>h6</dst>
+		<dst_port>9999</dst_port>
+		<baudwidth>20M</baudwidth>
+		<start_time>14</start_time>
+		<period>11</period>
+		<protocol>UDP</protocol>
+	</traffic>
+
+	<traffic>
+		<type>cbr</type>
+		<src>h2</src>
+		<dst>h7</dst>
+		<dst_port>9999</dst_port>
+		<baudwidth>20M</baudwidth>
+		<start_time>12</start_time>
+		<period>5</period>
+		<protocol>UDP</protocol>
+	</traffic>
+
+	<traffic>
+		<type>cbr</type>
+		<src>h2</src>
+		<dst>h7</dst>
+		<dst_port>9999</dst_port>
+		<baudwidth>20M</baudwidth>
+		<start_time>23</start_time>
+		<period>5</period>
+		<protocol>UDP</protocol>
+	</traffic>
+
+	<traffic>
+		<type>cbr</type>
+		<src>h2</src>
+		<dst>h7</dst>
+		<dst_port>9999</dst_port>
+		<baudwidth>50M</baudwidth>
+		<start_time>30</start_time>
+		<period>3</period>
+		<protocol>UDP</protocol>
+	</traffic>
+
+	<traffic>
+		<type>cbr</type>
+		<src>h2</src>
+		<dst>h7</dst>
+		<dst_port>9999</dst_port>
+		<baudwidth>50M</baudwidth>
+		<start_time>35</start_time>
+		<period>3</period>
+		<protocol>UDP</protocol>
+	</traffic>
+
+	<traffic>
+		<type>cbr</type>
+		<src>h2</src>
+		<dst>h7</dst>
+		<dst_port>9999</dst_port>
+		<baudwidth>50M</baudwidth>
+		<start_time>48</start_time>
+		<period>5</period>
+		<protocol>UDP</protocol>
+	</traffic>
+
+</collection>
