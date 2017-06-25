@@ -11,6 +11,8 @@ class ExpData():
         self.flowmatch = match
 
 
+
+
 class Exp():
 
     def __init__(self):
@@ -23,14 +25,16 @@ class Exp():
             pass
         else:
             file = open(filename, 'r')
-
+            head = ""
             flag = 0
             linenum = 0
             for line in file.readlines():
                 linenum = linenum + 1
                 if flag == 1:
                     if len(re.findall('OFOxmList', line)) != 0:
-                        data = ExpData(line)
+                        if not self.dataMap.has_key(line):
+                            self.dataMap[line] = ExpData(line)
+                        head = line
                         continue
                     if len(re.findall('TimeStamp:', line)) != 0 and len(re.findall('Speed:', line)) != 0:
                         tmp = re.findall('\d\.\d+E\d', line)[0]
@@ -38,20 +42,23 @@ class Exp():
                         tmp = re.findall('E\d', tmp)[0]
                         num = num * float(10 ^ (int(re.findall('\d+', tmp)[0])))
                         print num
-                        data.timestamp.append(num)
+                        self.dataMap[head].timestamp.append(num)
                         tmp = re.findall('\d+\.\d+Mbps', line)
                         if len(tmp) > 0:
                             tmp = tmp[0]
                             num = float(re.findall('\d+\.\d+', tmp)[0])
                             print num
-                            data.speed.append(num)
+                            self.dataMap[head].speed.append(num)
                         else:
-                            data.speed.append(0)
+                            self.dataMap[head].speed.append(0)
                         continue
-
-                    self.dataMap[copy.deepcopy(data.flowmatch)] = copy.deepcopy(data)
-                    print data.speed
-                    print data.timestamp
+                    else:
+#                        self.dataMap[copy.deepcopy(data.flowmatch)] = copy.deepcopy(data)
+                        print  self.dataMap[head]
+                        print  self.dataMap[head].flowmatch
+                        print  self.dataMap[head].speed
+                        print  self.dataMap[head].timestamp
+                        flag = 0
                 if len(re.findall('Speed Table', line)) != 0:
                     print 'find Speed Table'
                     flag = 1
@@ -83,7 +90,7 @@ class Exp():
     def dataGetByProtocol(self,protocol='UDP'):
         dellist = []
         for i in self.dataMap.iterkeys():
-            if len(re.findall('ETH_TYPE=OFOxmEthTypeVer13\(value=0x806\)',i)) == 0:
+            if len(re.findall('ETH_TYPE=OFOxmEthTypeVer13\(value=0x800\)',i)) == 0:
                 dellist.append(i)
         for i in dellist:
             del self.dataMap[i]
@@ -108,6 +115,5 @@ class Exp():
 if __name__ == '__main__':
     exp = Exp()
     exp.parselog(sys.argv[1])
-#    exp.dataGetByProtocol()
     exp.basicshow()
 
