@@ -45,15 +45,6 @@
 		<start_time>0</start_time>
 		<dst_port>9999</dst_port>
 		<source_type>file</source_type>
-		<source_add>/home/jason/Media/Videos/sheild.mp4</source_add>
-	</traffic>
-	<traffic>
-		<type>vbr</type>
-		<src>h4</src>
-		<dst>h5</dst>
-		<start_time>0</start_time>
-		<dst_port>9999</dst_port>
-		<source_type>file</source_type>
-		<source_add>/home/jason/Media/Videos/sheild.mp4</source_add>
+		<source_add>/home/jason/Videos/sheild/S04E17.mp4</source_add>
 	</traffic>
 </collection>
