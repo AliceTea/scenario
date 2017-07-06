@@ -1,0 +1,36 @@
+2017-07-06 16:26:06.946 INFO  [n.f.n.NETMonitor] Switch ID = 7
+2017-07-06 16:26:06.946 INFO  [n.f.n.NETMonitor] 	Input Port = 1
+2017-07-06 16:26:06.946 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499329503461, Utilization = 0.48888
+2017-07-06 16:26:06.946 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499329504463, Utilization = 0.0
+2017-07-06 16:26:06.946 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499329506464, Utilization = 6.135092453773112
+2017-07-06 16:26:06.946 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499329508465, Utilization = 11.140893553223389
+2017-07-06 16:26:06.946 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499329510465, Utilization = 7.36036
+2017-07-06 16:26:06.946 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499329512467, Utilization = 9.496503496503493
+2017-07-06 16:26:06.946 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499329514468, Utilization = 11.911852073963022
+2017-07-06 16:26:06.946 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499329516469, Utilization = 10.733697151424291
+2017-07-06 16:26:06.946 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499329518470, Utilization = 9.870440779610188
+2017-07-06 16:26:06.946 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499329520472, Utilization = 8.703144427786118
+2017-07-06 16:26:06.946 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499329522471, Utilization = 9.761304
+2017-07-06 16:26:06.947 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499329524472, Utilization = 7.063500249875059
+2017-07-06 16:26:06.947 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499329526474, Utilization = 7.258954522738626
+2017-07-06 16:26:06.947 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499329528474, Utilization = 8.43168015992005
+2017-07-06 16:26:06.947 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499329530475, Utilization = 8.143928035982004
+2017-07-06 16:26:06.947 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499329532475, Utilization = 12.46644
+2017-07-06 16:26:06.947 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499329534476, Utilization = 13.931546226886548
+2017-07-06 16:26:06.947 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499329536477, Utilization = 11.922710644677675
+2017-07-06 16:26:06.947 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499329538477, Utilization = 9.538592
+2017-07-06 16:26:06.947 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499329540482, Utilization = 10.76084357821087
+2017-07-06 16:26:06.965 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499329542478, Utilization = 9.609208
+2017-07-06 16:26:06.965 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499329544479, Utilization = 8.87145227386308
+2017-07-06 16:26:06.965 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499329546480, Utilization = 7.012712
+2017-07-06 16:26:06.965 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499329548482, Utilization = 11.439504247876076
+2017-07-06 16:26:06.965 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499329550481, Utilization = 11.102888555722151
+2017-07-06 16:26:06.965 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499329552481, Utilization = 10.869432
+2017-07-06 16:26:06.968 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499329554484, Utilization = 7.841398601398592
+2017-07-06 16:26:06.968 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499329556488, Utilization = 6.163856287425157
+2017-07-06 16:26:06.968 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499329558490, Utilization = 5.475412587412581
+2017-07-06 16:26:06.969 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499329560490, Utilization = 6.849752
+2017-07-06 16:26:06.969 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499329562490, Utilization = 4.354286856571719
+2017-07-06 16:26:06.969 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499329564491, Utilization = 0.0
+2017-07-06 16:26:06.969 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499329566788, Utilization = 0.0
+
