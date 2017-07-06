@@ -56,6 +56,7 @@ class ComplexTopo(SimpleTopo):
         if filename == '':
             super(ComplexTopo,self).__init__()
         else:
+            # self.drawtopo(filename)
             self.parseconf(filename)
 
     def parseconf(self,filename):
