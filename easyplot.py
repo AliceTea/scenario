@@ -1,7 +1,7 @@
 import re
 import sys
 import matplotlib.pylab as pl
-import copy
+import csv
 
 class ExpData():
 
@@ -81,6 +81,38 @@ class Exp():
         y.append(0)
         pl.plot(x,y)
 
+    def csvplot(self,filename):
+        f = open(filename,'r')
+        line = f.readline()
+        if len(re.findall("TimeStamp Speed",line)) == 0:
+            print "file is error"
+        lines = f.readlines()
+        del lines[0]
+
+        primitive = float(lines[0].split(" ",1)[0])
+
+        ts=[]
+        bps=[]
+        for line in lines:
+            x,y = line.split(" ",1)
+            ts.append((float(x)-primitive)*(1000000))
+            ts.append((float(x)-primitive)*(1000000))
+            bps.append(float(y))
+            bps.append(float(y))
+        del ts[len(ts)-1]
+        del bps[0]
+
+        pl.plot(ts,bps)
+#        print ts
+#        pl.hold()
+        pl.show()
+
+    def multiplot(self):
+        num = int(sys.argv[1])
+        for i in range(1,num):
+            self.csvplot(sys.argv[i+1])
+        pl.show()
+
     def basicshow(self):
         for i in self.dataMap:
             assert (isinstance(self.dataMap[i], ExpData))
@@ -114,6 +146,8 @@ class Exp():
 
 if __name__ == '__main__':
     exp = Exp()
-    exp.parselog(sys.argv[1])
-    exp.basicshow()
+#    exp.parselog(sys.argv[1])
+#    exp.basicshow()
+#    exp.csvplot(sys.argv[1])
+    exp.multiplot()
 
