@@ -18,6 +18,7 @@ class Exp():
     def __init__(self):
         self.Name = "Expdata"
         self.dataMap = {}
+        self.lineMap = {'myself':'-','polling':':','payless':'--'}
 
 
     def parselog(self, filename = ''):
@@ -84,10 +85,10 @@ class Exp():
     def csvplot(self,filename):
         f = open(filename,'r')
         line = f.readline()
+        print line
         if len(re.findall("TimeStamp Speed",line)) == 0:
             print "file is error"
         lines = f.readlines()
-        del lines[0]
 
         primitive = float(lines[0].split(" ",1)[0])
 
@@ -95,22 +96,38 @@ class Exp():
         bps=[]
         for line in lines:
             x,y = line.split(" ",1)
-            ts.append((float(x)-primitive)*(1000000))
-            ts.append((float(x)-primitive)*(1000000))
+            ts.append((float(x)-primitive)*(1000000000))
+            ts.append((float(x)-primitive)*(1000000000))
             bps.append(float(y))
             bps.append(float(y))
         del ts[len(ts)-1]
         del bps[0]
 
-        pl.plot(ts,bps)
+        labelname = re.findall("\w+-",filename)[0]
+        labelname = re.findall("\w+",labelname)[0]
+        if labelname == 'payless':
+            min = re.findall("\d+M-\d+M",filename)[0]
+            max = re.findall("\d+M-\d+M", filename)[0]
+            min = re.findall("\d+",min)[0]
+            max = re.findall("\d+", max)[1]
+            labelname = labelname+","+"min="+min+"Mbps"+","+"max="+max+"Mbps"
+        agtype = re.findall("\w+", labelname)[0]
+        pl.plot(ts,bps,self.lineMap[agtype]+"k",label=labelname)
 #        print ts
 #        pl.hold()
-        pl.show()
+#        pl.show()
 
     def multiplot(self):
         num = int(sys.argv[1])
-        for i in range(1,num):
+        print range(1,num+1)
+        for i in range(1,num+1):
             self.csvplot(sys.argv[i+1])
+
+        #plot configuration
+        pl.xlabel("time(seconds)")
+        pl.ylabel("traffic rate(Mbps)")
+        pl.axis([0,60,0,40])
+        pl.legend(loc="left upper",fancybox='false',fontsize='small')
         pl.show()
 
     def basicshow(self):

@@ -37,10 +37,10 @@ class Exp():
                         head = line
                         continue
                     if len(re.findall('TimeStamp:', line)) != 0 and len(re.findall('Speed:', line)) != 0:
-                        tmp = re.findall('\d\.\d+E\d', line)[0]
-                        num = float(re.findall('\d\.\d+', tmp)[0])
+                        tmp = re.findall('\d+\.\d+E\d+', line)[0]
+                        num = float(re.findall('\d+\.\d+', tmp)[0])
                         tmp = re.findall('E\d', tmp)[0]
-                        num = num * float(10 ^ (int(re.findall('\d+', tmp)[0])))
+#                        num = num * float(10 ^ (int(re.findall('\d+', tmp)[0])))
                         print num
                         self.dataMap[head].timestamp.append(num)
                         tmp = re.findall('\d+\.\d+Mbps', line)

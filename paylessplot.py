@@ -25,8 +25,8 @@ for line in lines:
 X=[]
 Y=[]
 for i in x:
-    X.append(i)
-    X.append(i)
+    X.append(float(i)/1000000)
+    X.append(float(i)/1000000)
 for i in y:
     Y.append(i)
     Y.append(i)
@@ -37,7 +37,7 @@ filename = sys.argv[1] + "_" + str(1) + ".csv"
 csvfile = open(filename, 'w')
 csvfile.write("TimeStamp Speed\n")
 for n in range(len(x)):
-    csvfile.write(str(x[n]) + " " + str(y[n])+"\n")
+    csvfile.write(str(float(x[n])/1000000000000) + " " + str(y[n])+"\n")
 csvfile.close()
 
 #pl.plot(X,Y)
