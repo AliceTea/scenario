@@ -31,9 +31,16 @@ for i in y:
     Y.append(i)
     Y.append(i)
 del X[X.__len__()-1] 
-del Y[0] 
+del Y[0]
 
-pl.plot(X,Y)
+filename = sys.argv[1] + "_" + str(1) + ".csv"
+csvfile = open(filename, 'w')
+csvfile.write("TimeStamp Speed\n")
+for n in range(len(x)):
+    csvfile.write(str(x[n]) + " " + str(y[n])+"\n")
+csvfile.close()
 
-pl.show()
+#pl.plot(X,Y)
+
+#pl.show()
 

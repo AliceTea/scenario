@@ -1,0 +1,21 @@
+2017-07-07 11:08:35.446 INFO  [n.f.n.NETMonitor] Switch ID = 7
+2017-07-07 11:08:35.446 INFO  [n.f.n.NETMonitor] 	Input Port = 1
+2017-07-07 11:08:35.446 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499396852146, Utilization = 0.11971349862258954
+2017-07-07 11:08:35.446 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499396853148, Utilization = 8.134460618145562
+2017-07-07 11:08:35.446 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499396855150, Utilization = 7.964761619190405
+2017-07-07 11:08:35.446 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499396859151, Utilization = 6.92776811594203
+2017-07-07 11:08:35.446 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499396859152, Utilization = 0.0
+2017-07-07 11:08:35.446 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499396864153, Utilization = NaN
+2017-07-07 11:08:35.446 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499396864155, Utilization = 0.0
+2017-07-07 11:08:35.446 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499396869155, Utilization = 8.42008878224355
+2017-07-07 11:08:35.446 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499396874158, Utilization = 9.186598400000001
+2017-07-07 11:08:35.446 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499396879157, Utilization = 9.778034386245505
+2017-07-07 11:08:35.446 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499396884158, Utilization = 6.717783286685322
+2017-07-07 11:08:35.446 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499396889159, Utilization = 7.0268352
+2017-07-07 11:08:35.446 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499396894159, Utilization = 9.065281343731257
+2017-07-07 11:08:35.446 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499396899160, Utilization = 6.806570914182833
+2017-07-07 11:08:35.446 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499396904161, Utilization = 10.043009996001608
+2017-07-07 11:08:35.447 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499396909162, Utilization = 7.7264767999999995
+2017-07-07 11:08:35.447 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499396914162, Utilization = 1.5988610277944395
+2017-07-07 11:08:35.447 INFO  [n.f.n.NETMonitor] 		Timestamp = 1499396915365, Utilization = 0.0
+
