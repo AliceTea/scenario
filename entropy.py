@@ -6,7 +6,7 @@ class entropy:
     def __init__(self):
         pass
 
-    def calc_ent(x):
+    def calc_ent(self,x):
         """
             calculate shanno ent of x
         """
@@ -21,7 +21,7 @@ class entropy:
 
         return ent
    
-    def calc_condition_ent(x, y):
+    def calc_condition_ent(self,x, y):
         """
             calculate ent H(y|x)
         """
@@ -38,7 +38,7 @@ class entropy:
 
         return ent
 
-    def calc_ent_grap(x,y):
+    def calc_ent_grap(self,x,y):
         """
             calculate ent grap
         """
