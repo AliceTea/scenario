@@ -127,7 +127,7 @@ class Exp():
         pl.xlabel("time(seconds)")
         pl.ylabel("traffic rate(Mbps)")
         pl.axis([0,60,0,40])
-        pl.legend(loc="left upper",fancybox='false',fontsize='small')
+        pl.legend(loc="left upper",fancybox='false',fontsize=10)
         pl.show()
 
     def basicshow(self):
