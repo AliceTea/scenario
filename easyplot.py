@@ -2,6 +2,8 @@ import re
 import sys
 import matplotlib.pylab as pl
 import csv
+sys.path.append("~/workspace/scenario")
+from entropy import *
 
 class ExpData():
 
@@ -19,7 +21,6 @@ class Exp():
         self.Name = "Expdata"
         self.dataMap = {}
         self.lineMap = {'myself':'-','polling':':','payless':'--'}
-
 
     def parselog(self, filename = ''):
         if filename == '':
@@ -121,7 +122,9 @@ class Exp():
         num = int(sys.argv[1])
         print range(1,num+1)
         for i in range(1,num+1):
-            self.csvplot(sys.argv[i+1])
+            # self.csvplot(sys.argv[i+1])
+            # self.entplot(sys.argv[i+1])
+            self.entgrapplot(sys.argv[3],sys.argv[i+1])
 
         #plot configuration
         pl.xlabel("time(seconds)")
@@ -129,6 +132,93 @@ class Exp():
         pl.axis([0,60,0,40])
         pl.legend(loc="left upper",fancybox='false',fontsize=10)
         pl.show()
+
+    def entplot(self,filename):
+        f = open(filename,'r')
+        line = f.readline()
+        print line
+        if len(re.findall("TimeStamp Speed",line)) == 0:
+            print "file is error"
+        lines = f.readlines()
+
+        primitive = float(lines[0].split(" ",1)[0])
+
+        ts=[]
+        bps=[]
+        for line in lines:
+            x,y = line.split(" ",1)
+            ts.append((float(x)-primitive)*(1000000000))
+            bps.append(float(y))
+        
+        ent_x = []
+        ts.append(65535)
+        bps.append(0)
+        r = [0.1*i for i in range(600)]
+        for i in r: 
+            ent_x.append(bps[0])
+            if(ts[0] < i):
+                del ts[0]
+                del bps[0]
+        ent = entropy()
+        print ent.calc_ent(ent_x)
+        pass
+
+    def entgrapplot(self,filename,sourcefile):
+        f = open(filename,'r')
+        line = f.readline()
+        print line
+        if len(re.findall("TimeStamp Speed",line)) == 0:
+            print "file is error"
+        lines = f.readlines()
+
+        primitive = float(lines[0].split(" ",1)[0])
+
+        ts=[]
+        bps=[]
+        for line in lines:
+            x,y = line.split(" ",1)
+            ts.append((float(x)-primitive)*(1000000000))
+            bps.append(float(y))
+        
+        ent_x = []
+        ts.append(65535)
+        bps.append(0)
+        r = [0.1*i for i in range(600)]
+        for i in r: 
+            ent_x.append(bps[0])
+            if(ts[0] < i):
+                del ts[0]
+                del bps[0]
+
+        f = open(sourcefile,'r')
+        line = f.readline()
+        print line
+        if len(re.findall("TimeStamp Speed",line)) == 0:
+            print "file is error"
+        lines = f.readlines()
+
+        primitive = float(lines[0].split(" ",1)[0])
+
+        ts=[]
+        bps=[]
+        for line in lines:
+            x,y = line.split(" ",1)
+            ts.append((float(x)-primitive)*(1000000000))
+            bps.append(float(y))
+        
+        ent_y = []
+        ts.append(65535)
+        bps.append(0)
+        r = [0.1*i for i in range(600)]
+        for i in r: 
+            ent_y.append(bps[0])
+            if(ts[0] < i):
+                del ts[0]
+                del bps[0]
+        ent = entropy()
+        print ent.calc_ent_grap(ent_x,ent_y)
+        pass
+
 
     def basicshow(self):
         for i in self.dataMap:
