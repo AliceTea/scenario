@@ -43,39 +43,9 @@
 		<src>h1</src>
 		<dst>h8</dst>
 		<dst_port>9999</dst_port>
-		<baudwidth>10M</baudwidth>
+		<baudwidth>100M</baudwidth>
 		<start_time>0</start_time>
-		<period>4</period>
-		<protocol>UDP</protocol>
-	</traffic>
-	<traffic>
-		<type>cbr</type>
-		<src>h1</src>
-		<dst>h8</dst>
-		<dst_port>9999</dst_port>
-		<baudwidth>20M</baudwidth>
-		<start_time>4</start_time>
-		<period>10</period>
-		<protocol>UDP</protocol>
-	</traffic>
-	<traffic>
-		<type>cbr</type>
-		<src>h1</src>
-		<dst>h8</dst>
-		<dst_port>9999</dst_port>
-		<baudwidth>5M</baudwidth>
-		<start_time>14</start_time>
-		<period>2</period>
-		<protocol>UDP</protocol>
-	</traffic>
-	<traffic>
-		<type>cbr</type>
-		<src>h1</src>
-		<dst>h8</dst>
-		<dst_port>9999</dst_port>
-		<baudwidth>50M</baudwidth>
-		<start_time>16</start_time>
-		<period>12</period>
+		<period>60</period>
 		<protocol>UDP</protocol>
 	</traffic>
 </collection>

@@ -1,0 +1,664 @@
+2017-07-21 16:02:04.56 INFO  [n.f.c.m.FloodlightModuleLoader] Loading modules from src/main/resources/floodlightdefault.properties
+2017-07-21 16:02:04.240 WARN  [n.f.r.RestApiServer] HTTPS disabled; HTTPS will not be used to connect to the REST API.
+2017-07-21 16:02:04.241 WARN  [n.f.r.RestApiServer] HTTP enabled; Allowing unsecure access to REST API on port 8080.
+2017-07-21 16:02:04.241 WARN  [n.f.r.RestApiServer] CORS access control allow ALL origins: true
+2017-07-21 16:02:04.563 WARN  [n.f.c.i.OFSwitchManager] SSL disabled. Using unsecure connections between Floodlight and switches.
+2017-07-21 16:02:04.564 INFO  [n.f.c.i.OFSwitchManager] Clear switch flow tables on initial handshake as master: TRUE
+2017-07-21 16:02:04.565 INFO  [n.f.c.i.OFSwitchManager] Clear switch flow tables on each transition to master: TRUE
+2017-07-21 16:02:04.587 INFO  [n.f.c.i.OFSwitchManager] Setting 0x1 as the default max tables to receive table-miss flow
+2017-07-21 16:02:04.713 INFO  [n.f.c.i.OFSwitchManager] OpenFlow version OF_15 will be advertised to switches. Supported fallback versions [OF_10, OF_11, OF_12, OF_13, OF_14, OF_15]
+2017-07-21 16:02:04.714 INFO  [n.f.c.i.OFSwitchManager] Listening for OpenFlow switches on [0.0.0.0]:6653
+2017-07-21 16:02:04.714 INFO  [n.f.c.i.OFSwitchManager] OpenFlow socket config: 1 boss thread(s), 16 worker thread(s), 60000 ms TCP connection timeout, max 1000 connection backlog, 4194304 byte TCP send buffer size
+2017-07-21 16:02:04.717 INFO  [n.f.c.i.Controller] ControllerId set to 1
+2017-07-21 16:02:04.717 INFO  [n.f.c.i.Controller] Shutdown when controller transitions to STANDBY HA role: true
+2017-07-21 16:02:04.717 WARN  [n.f.c.i.Controller] Controller will automatically deserialize all Ethernet packet-in messages. Set 'deserializeEthPacketIns' to 'FALSE' if this feature is not required or when benchmarking core performance
+2017-07-21 16:02:04.718 INFO  [n.f.c.i.Controller] Controller role set to ACTIVE
+2017-07-21 16:02:04.808 INFO  [n.f.l.i.LinkDiscoveryManager] Link latency history set to 10 LLDP data points
+2017-07-21 16:02:04.810 INFO  [n.f.l.i.LinkDiscoveryManager] Latency update threshold set to +/-0.5 (50.0%) of rolling historical average
+2017-07-21 16:02:04.812 INFO  [n.f.t.TopologyManager] Path metrics set to LATENCY
+2017-07-21 16:02:04.812 INFO  [n.f.t.TopologyManager] Will compute a max of 3 paths upon topology updates
+2017-07-21 16:02:04.831 INFO  [n.f.f.Forwarding] Default hard timeout not configured. Using 0.
+2017-07-21 16:02:04.832 INFO  [n.f.f.Forwarding] Default idle timeout set to 5.
+2017-07-21 16:02:04.832 INFO  [n.f.f.Forwarding] Default table ID not configured. Using 0x0.
+2017-07-21 16:02:04.832 INFO  [n.f.f.Forwarding] Default priority not configured. Using 1.
+2017-07-21 16:02:04.832 INFO  [n.f.f.Forwarding] Default flags will be set to SEND_FLOW_REM true.
+2017-07-21 16:02:04.832 INFO  [n.f.f.Forwarding] Default flow matches set to: IN_PORT=true, VLAN=true, MAC=true, IP=true, FLAG=true, TPPT=true
+2017-07-21 16:02:04.832 INFO  [n.f.f.Forwarding] Default detailed flow matches set to: SRC_MAC=true, DST_MAC=true, SRC_IP=true, DST_IP=true, SRC_TPPT=true, DST_TPPT=true
+2017-07-21 16:02:04.832 INFO  [n.f.f.Forwarding] Not flooding ARP packets. ARP flows will be inserted for known destinations
+2017-07-21 16:02:04.832 INFO  [n.f.f.Forwarding] Flows will be removed on link/port down events
+2017-07-21 16:02:04.833 INFO  [n.f.s.StatisticsCollector] Statistics collection disabled
+2017-07-21 16:02:04.834 INFO  [n.f.s.StatisticsCollector] Port statistics collection interval set to 10s
+2017-07-21 16:02:04.977 INFO  [o.s.s.i.SyncManager] [1] Updating sync configuration ClusterConfig [allNodes={1=Node [hostname=192.168.1.100, port=6642, nodeId=1, domainId=1], 2=Node [hostname=192.168.1.100, port=6643, nodeId=2, domainId=1]}, authScheme=CHALLENGE_RESPONSE, keyStorePath=/etc/floodlight/key2.jceks, keyStorePassword is set]
+2017-07-21 16:02:05.169 INFO  [o.s.s.i.r.RPCService] Listening for internal floodlight RPC on 0.0.0.0/0.0.0.0:6642
+2017-07-21 16:02:05.470 INFO  [o.r.C.I.Server] Starting the Simple [HTTP/1.1] server on port 8080
+2017-07-21 16:02:05.471 INFO  [org.restlet] Starting net.floodlightcontroller.restserver.RestApiServer$RestApplication application
+2017-07-21 16:02:08.537 INFO  [n.f.j.JythonServer] Starting DebugServer on :6655
+2017-07-21 16:02:13.733 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:60740
+2017-07-21 16:02:13.763 INFO  [n.f.c.i.OFChannelHandler] [[? from 127.0.0.1:60740]] Disconnected connection
+2017-07-21 16:02:14.761 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:60742
+2017-07-21 16:02:14.762 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:60744
+2017-07-21 16:02:14.766 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:60746
+2017-07-21 16:02:14.767 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:60748
+2017-07-21 16:02:14.768 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:60750
+2017-07-21 16:02:14.776 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:60752
+2017-07-21 16:02:14.783 INFO  [n.f.c.i.OFChannelHandler] Negotiated down to switch OpenFlow version of OF_13 for /127.0.0.1:60750 using lesser hello header algorithm.
+2017-07-21 16:02:14.788 INFO  [n.f.c.i.OFChannelHandler] Negotiated down to switch OpenFlow version of OF_13 for /127.0.0.1:60748 using lesser hello header algorithm.
+2017-07-21 16:02:14.816 INFO  [n.f.c.i.OFChannelHandler] Negotiated down to switch OpenFlow version of OF_13 for /127.0.0.1:60752 using lesser hello header algorithm.
+2017-07-21 16:02:14.781 INFO  [n.f.c.i.OFChannelHandler] Negotiated down to switch OpenFlow version of OF_13 for /127.0.0.1:60744 using lesser hello header algorithm.
+2017-07-21 16:02:14.783 INFO  [n.f.c.i.OFChannelHandler] Negotiated down to switch OpenFlow version of OF_13 for /127.0.0.1:60742 using lesser hello header algorithm.
+2017-07-21 16:02:14.783 INFO  [n.f.c.i.OFChannelHandler] Negotiated down to switch OpenFlow version of OF_13 for /127.0.0.1:60746 using lesser hello header algorithm.
+2017-07-21 16:02:14.832 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:60754
+2017-07-21 16:02:14.871 INFO  [n.f.c.i.OFChannelHandler] Negotiated down to switch OpenFlow version of OF_13 for /127.0.0.1:60754 using lesser hello header algorithm.
+2017-07-21 16:02:15.87 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Switch OFSwitch DPID[00:00:00:00:00:00:00:02] bound to class class net.floodlightcontroller.core.internal.OFSwitch, description SwitchDescription [manufacturerDescription=Nicira, Inc., hardwareDescription=Open vSwitch, softwareDescription=2.7.0, serialNumber=None, datapathDescription=None]
+2017-07-21 16:02:15.89 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Switch OFSwitch DPID[00:00:00:00:00:00:00:07] bound to class class net.floodlightcontroller.core.internal.OFSwitch, description SwitchDescription [manufacturerDescription=Nicira, Inc., hardwareDescription=Open vSwitch, softwareDescription=2.7.0, serialNumber=None, datapathDescription=None]
+2017-07-21 16:02:15.88 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Switch OFSwitch DPID[00:00:00:00:00:00:00:06] bound to class class net.floodlightcontroller.core.internal.OFSwitch, description SwitchDescription [manufacturerDescription=Nicira, Inc., hardwareDescription=Open vSwitch, softwareDescription=2.7.0, serialNumber=None, datapathDescription=None]
+2017-07-21 16:02:15.88 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Switch OFSwitch DPID[00:00:00:00:00:00:00:05] bound to class class net.floodlightcontroller.core.internal.OFSwitch, description SwitchDescription [manufacturerDescription=Nicira, Inc., hardwareDescription=Open vSwitch, softwareDescription=2.7.0, serialNumber=None, datapathDescription=None]
+2017-07-21 16:02:15.88 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Switch OFSwitch DPID[00:00:00:00:00:00:00:04] bound to class class net.floodlightcontroller.core.internal.OFSwitch, description SwitchDescription [manufacturerDescription=Nicira, Inc., hardwareDescription=Open vSwitch, softwareDescription=2.7.0, serialNumber=None, datapathDescription=None]
+2017-07-21 16:02:15.88 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Switch OFSwitch DPID[00:00:00:00:00:00:00:01] bound to class class net.floodlightcontroller.core.internal.OFSwitch, description SwitchDescription [manufacturerDescription=Nicira, Inc., hardwareDescription=Open vSwitch, softwareDescription=2.7.0, serialNumber=None, datapathDescription=None]
+2017-07-21 16:02:15.87 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Switch OFSwitch DPID[00:00:00:00:00:00:00:03] bound to class class net.floodlightcontroller.core.internal.OFSwitch, description SwitchDescription [manufacturerDescription=Nicira, Inc., hardwareDescription=Open vSwitch, softwareDescription=2.7.0, serialNumber=None, datapathDescription=None]
+2017-07-21 16:02:17.211 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Defining switch role from config file: ROLE_MASTER
+2017-07-21 16:02:17.260 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Defining switch role from config file: ROLE_MASTER
+2017-07-21 16:02:17.360 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Defining switch role from config file: ROLE_MASTER
+2017-07-21 16:02:17.387 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Clearing flow tables of 00:00:00:00:00:00:00:01 on upcoming transition to MASTER.
+2017-07-21 16:02:17.386 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Clearing flow tables of 00:00:00:00:00:00:00:03 on upcoming transition to MASTER.
+2017-07-21 16:02:17.404 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Clearing flow tables of 00:00:00:00:00:00:00:04 on upcoming transition to MASTER.
+2017-07-21 16:02:17.462 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Defining switch role from config file: ROLE_MASTER
+2017-07-21 16:02:17.465 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Clearing flow tables of 00:00:00:00:00:00:00:02 on upcoming transition to MASTER.
+2017-07-21 16:02:17.474 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Clearing flow tables of 00:00:00:00:00:00:00:06 on upcoming transition to MASTER.
+2017-07-21 16:02:17.687 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Clearing flow tables of 00:00:00:00:00:00:00:07 on upcoming transition to MASTER.
+2017-07-21 16:02:17.696 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Defining switch role from config file: ROLE_MASTER
+2017-07-21 16:02:17.753 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Clearing flow tables of 00:00:00:00:00:00:00:05 on upcoming transition to MASTER.
+2017-07-21 16:02:18.236 INFO  [n.f.t.TopologyManager] Recomputing topology due to: link-discovery-updates
+2017-07-21 16:02:18.297 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:06, port=1, activeSince=Fri Jul 21 16:02:17 CST 2017, lastSeen=Fri Jul 21 16:02:18 CST 2017]]  newmap null 
+2017-07-21 16:02:18.297 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:05, port=1, activeSince=Fri Jul 21 16:02:17 CST 2017, lastSeen=Fri Jul 21 16:02:18 CST 2017]]  newmap null 
+2017-07-21 16:02:18.298 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:07, port=1, activeSince=Fri Jul 21 16:02:17 CST 2017, lastSeen=Fri Jul 21 16:02:18 CST 2017]]  newmap null 
+2017-07-21 16:02:18.299 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:01, port=1, activeSince=Fri Jul 21 16:02:18 CST 2017, lastSeen=Fri Jul 21 16:02:18 CST 2017], AttachmentPoint [sw=00:00:00:00:00:00:00:02, port=3, activeSince=Fri Jul 21 16:02:17 CST 2017, lastSeen=Fri Jul 21 16:02:18 CST 2017], AttachmentPoint [sw=00:00:00:00:00:00:00:03, port=1, activeSince=Fri Jul 21 16:02:18 CST 2017, lastSeen=Fri Jul 21 16:02:18 CST 2017], AttachmentPoint [sw=00:00:00:00:00:00:00:04, port=1, activeSince=Fri Jul 21 16:02:18 CST 2017, lastSeen=Fri Jul 21 16:02:18 CST 2017], AttachmentPoint [sw=00:00:00:00:00:00:00:06, port=1, activeSince=Fri Jul 21 16:02:18 CST 2017, lastSeen=Fri Jul 21 16:02:18 CST 2017], AttachmentPoint [sw=00:00:00:00:00:00:00:07, port=1, activeSince=Fri Jul 21 16:02:18 CST 2017, lastSeen=Fri Jul 21 16:02:18 CST 2017]]  newmap null 
+2017-07-21 16:02:18.300 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:01, port=1, activeSince=Fri Jul 21 16:02:18 CST 2017, lastSeen=Fri Jul 21 16:02:18 CST 2017], AttachmentPoint [sw=00:00:00:00:00:00:00:02, port=2, activeSince=Fri Jul 21 16:02:18 CST 2017, lastSeen=Fri Jul 21 16:02:18 CST 2017], AttachmentPoint [sw=00:00:00:00:00:00:00:03, port=1, activeSince=Fri Jul 21 16:02:18 CST 2017, lastSeen=Fri Jul 21 16:02:18 CST 2017], AttachmentPoint [sw=00:00:00:00:00:00:00:05, port=1, activeSince=Fri Jul 21 16:02:18 CST 2017, lastSeen=Fri Jul 21 16:02:18 CST 2017], AttachmentPoint [sw=00:00:00:00:00:00:00:06, port=1, activeSince=Fri Jul 21 16:02:18 CST 2017, lastSeen=Fri Jul 21 16:02:18 CST 2017], AttachmentPoint [sw=00:00:00:00:00:00:00:07, port=1, activeSince=Fri Jul 21 16:02:18 CST 2017, lastSeen=Fri Jul 21 16:02:18 CST 2017]]  newmap null 
+2017-07-21 16:02:18.300 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:01, port=1, activeSince=Fri Jul 21 16:02:17 CST 2017, lastSeen=Fri Jul 21 16:02:18 CST 2017], AttachmentPoint [sw=00:00:00:00:00:00:00:03, port=1, activeSince=Fri Jul 21 16:02:18 CST 2017, lastSeen=Fri Jul 21 16:02:18 CST 2017], AttachmentPoint [sw=00:00:00:00:00:00:00:06, port=1, activeSince=Fri Jul 21 16:02:18 CST 2017, lastSeen=Fri Jul 21 16:02:18 CST 2017], AttachmentPoint [sw=00:00:00:00:00:00:00:07, port=1, activeSince=Fri Jul 21 16:02:18 CST 2017, lastSeen=Fri Jul 21 16:02:18 CST 2017]]  newmap null 
+2017-07-21 16:02:18.301 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:01, port=2, activeSince=Fri Jul 21 16:02:18 CST 2017, lastSeen=Fri Jul 21 16:02:18 CST 2017], AttachmentPoint [sw=00:00:00:00:00:00:00:02, port=1, activeSince=Fri Jul 21 16:02:18 CST 2017, lastSeen=Fri Jul 21 16:02:18 CST 2017], AttachmentPoint [sw=00:00:00:00:00:00:00:04, port=1, activeSince=Fri Jul 21 16:02:18 CST 2017, lastSeen=Fri Jul 21 16:02:18 CST 2017], AttachmentPoint [sw=00:00:00:00:00:00:00:05, port=1, activeSince=Fri Jul 21 16:02:18 CST 2017, lastSeen=Fri Jul 21 16:02:18 CST 2017]]  newmap null 
+2017-07-21 16:02:18.302 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:02, port=1, activeSince=Fri Jul 21 16:02:18 CST 2017, lastSeen=Fri Jul 21 16:02:18 CST 2017], AttachmentPoint [sw=00:00:00:00:00:00:00:04, port=1, activeSince=Fri Jul 21 16:02:18 CST 2017, lastSeen=Fri Jul 21 16:02:18 CST 2017], AttachmentPoint [sw=00:00:00:00:00:00:00:05, port=1, activeSince=Fri Jul 21 16:02:18 CST 2017, lastSeen=Fri Jul 21 16:02:18 CST 2017]]  newmap null 
+2017-07-21 16:02:18.302 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:01, port=2, activeSince=Fri Jul 21 16:02:18 CST 2017, lastSeen=Fri Jul 21 16:02:18 CST 2017], AttachmentPoint [sw=00:00:00:00:00:00:00:02, port=1, activeSince=Fri Jul 21 16:02:18 CST 2017, lastSeen=Fri Jul 21 16:02:18 CST 2017], AttachmentPoint [sw=00:00:00:00:00:00:00:03, port=2, activeSince=Fri Jul 21 16:02:18 CST 2017, lastSeen=Fri Jul 21 16:02:18 CST 2017], AttachmentPoint [sw=00:00:00:00:00:00:00:05, port=1, activeSince=Fri Jul 21 16:02:18 CST 2017, lastSeen=Fri Jul 21 16:02:18 CST 2017], AttachmentPoint [sw=00:00:00:00:00:00:00:07, port=1, activeSince=Fri Jul 21 16:02:18 CST 2017, lastSeen=Fri Jul 21 16:02:18 CST 2017], AttachmentPoint [sw=00:00:00:00:00:00:00:04, port=1, activeSince=Fri Jul 21 16:02:18 CST 2017, lastSeen=Fri Jul 21 16:02:18 CST 2017]]  newmap null 
+2017-07-21 16:02:18.303 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:01, port=2, activeSince=Fri Jul 21 16:02:18 CST 2017, lastSeen=Fri Jul 21 16:02:18 CST 2017], AttachmentPoint [sw=00:00:00:00:00:00:00:02, port=1, activeSince=Fri Jul 21 16:02:18 CST 2017, lastSeen=Fri Jul 21 16:02:18 CST 2017], AttachmentPoint [sw=00:00:00:00:00:00:00:03, port=3, activeSince=Fri Jul 21 16:02:18 CST 2017, lastSeen=Fri Jul 21 16:02:18 CST 2017], AttachmentPoint [sw=00:00:00:00:00:00:00:04, port=1, activeSince=Fri Jul 21 16:02:18 CST 2017, lastSeen=Fri Jul 21 16:02:18 CST 2017], AttachmentPoint [sw=00:00:00:00:00:00:00:06, port=1, activeSince=Fri Jul 21 16:02:18 CST 2017, lastSeen=Fri Jul 21 16:02:18 CST 2017], AttachmentPoint [sw=00:00:00:00:00:00:00:05, port=1, activeSince=Fri Jul 21 16:02:18 CST 2017, lastSeen=Fri Jul 21 16:02:18 CST 2017]]  newmap null 
+2017-07-21 16:02:20.235 INFO  [n.f.l.i.LinkDiscoveryManager] Sending LLDP packets out of all the enabled ports
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=2), ETH_DST=OFOxmEthDstVer13(value=76:57:be:71:ac:c6), ETH_SRC=OFOxmEthSrcVer13(value=de:e9:31:a4:bb:99), ETH_TYPE=OFOxmEthTypeVer13(value=0x806)}
+Adding OFOxmList{IN_PORT=OFOxmInPortVer13(value=2), ETH_DST=OFOxmEthDstVer13(value=76:57:be:71:ac:c6), ETH_SRC=OFOxmEthSrcVer13(value=de:e9:31:a4:bb:99), ETH_TYPE=OFOxmEthTypeVer13(value=0x806)}
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Adding OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Conflict
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=2), ETH_DST=OFOxmEthDstVer13(value=76:57:be:71:ac:c6), ETH_SRC=OFOxmEthSrcVer13(value=de:e9:31:a4:bb:99), ETH_TYPE=OFOxmEthTypeVer13(value=0x806)}
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=1, durationNsec=21000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x0020000000000000, packetCount=0x0000000000000001, byteCount=0x000000000000002a, match=OFMatchV3Ver13(in_port=2, eth_dst=76:57:be:71:ac:c6, eth_src=de:e9:31:a4:bb:99, eth_type=0x806), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=1, maxLen=65535)])])]
+1
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=0, durationNsec=804000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002e000000, packetCount=0x000000000000023b, byteCount=0x00000000000bd4fa, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x800, ip_proto=0x11, ipv4_src=10.0.0.2, ipv4_dst=10.0.0.7, udp_src=47690, udp_dst=9999), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+1
+42
+775418
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=2), ETH_DST=OFOxmEthDstVer13(value=76:57:be:71:ac:c6), ETH_SRC=OFOxmEthSrcVer13(value=de:e9:31:a4:bb:99), ETH_TYPE=OFOxmEthTypeVer13(value=0x806)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=1, durationNsec=520000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x0020000000000000, packetCount=0x0000000000000001, byteCount=0x000000000000002a, match=OFMatchV3Ver13(in_port=2, eth_dst=76:57:be:71:ac:c6, eth_src=de:e9:31:a4:bb:99, eth_type=0x806), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=1, maxLen=65535)])])]
+1
+1
+42
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=1, durationNsec=307000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002e000000, packetCount=0x00000000000003ec, byteCount=0x000000000014cde8, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x800, ip_proto=0x11, ipv4_src=10.0.0.2, ipv4_dst=10.0.0.7, udp_src=47690, udp_dst=9999), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+1363432
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=2), ETH_DST=OFOxmEthDstVer13(value=76:57:be:71:ac:c6), ETH_SRC=OFOxmEthSrcVer13(value=de:e9:31:a4:bb:99), ETH_TYPE=OFOxmEthTypeVer13(value=0x806)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=2, durationNsec=27000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x0020000000000000, packetCount=0x0000000000000001, byteCount=0x000000000000002a, match=OFMatchV3Ver13(in_port=2, eth_dst=76:57:be:71:ac:c6, eth_src=de:e9:31:a4:bb:99, eth_type=0x806), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=1, maxLen=65535)])])]
+1
+1
+42
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=1, durationNsec=816000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002e000000, packetCount=0x000000000000059e, byteCount=0x00000000001dcc24, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x800, ip_proto=0x11, ipv4_src=10.0.0.2, ipv4_dst=10.0.0.7, udp_src=47690, udp_dst=9999), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+1952804
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=2), ETH_DST=OFOxmEthDstVer13(value=76:57:be:71:ac:c6), ETH_SRC=OFOxmEthSrcVer13(value=de:e9:31:a4:bb:99), ETH_TYPE=OFOxmEthTypeVer13(value=0x806)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=2, durationNsec=538000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x0020000000000000, packetCount=0x0000000000000001, byteCount=0x000000000000002a, match=OFMatchV3Ver13(in_port=2, eth_dst=76:57:be:71:ac:c6, eth_src=de:e9:31:a4:bb:99, eth_type=0x806), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=1, maxLen=65535)])])]
+1
+1
+42
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=2, durationNsec=326000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002e000000, packetCount=0x00000000000006f2, byteCount=0x000000000024d7bc, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x800, ip_proto=0x11, ipv4_src=10.0.0.2, ipv4_dst=10.0.0.7, udp_src=47690, udp_dst=9999), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+2414524
+2017-07-21 16:02:35.242 INFO  [n.f.l.i.LinkDiscoveryManager] Sending LLDP packets out of all the enabled ports
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=2, durationNsec=836000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002e000000, packetCount=0x000000000000082e, byteCount=0x00000000002b6404, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x800, ip_proto=0x11, ipv4_src=10.0.0.2, ipv4_dst=10.0.0.7, udp_src=47690, udp_dst=9999), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+2843652
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=3, durationNsec=346000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002e000000, packetCount=0x0000000000000968, byteCount=0x000000000031e5b0, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x800, ip_proto=0x11, ipv4_src=10.0.0.2, ipv4_dst=10.0.0.7, udp_src=47690, udp_dst=9999), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+3270064
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=2), ETH_DST=OFOxmEthDstVer13(value=76:57:be:71:ac:c6), ETH_SRC=OFOxmEthSrcVer13(value=de:e9:31:a4:bb:99), ETH_TYPE=OFOxmEthTypeVer13(value=0x806)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=4, durationNsec=47000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x0020000000000000, packetCount=0x0000000000000001, byteCount=0x000000000000002a, match=OFMatchV3Ver13(in_port=2, eth_dst=76:57:be:71:ac:c6, eth_src=de:e9:31:a4:bb:99, eth_type=0x806), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=1, maxLen=65535)])])]
+1
+1
+42
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=3, durationNsec=857000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002e000000, packetCount=0x0000000000000aa6, byteCount=0x0000000000387c94, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x800, ip_proto=0x11, ipv4_src=10.0.0.2, ipv4_dst=10.0.0.7, udp_src=47690, udp_dst=9999), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+3701908
+FLOW_REMOVED message
+FLOW_REMOVED message
+FLOW_REMOVED message
+FLOW_REMOVED message
+FLOW_REMOVED message
+Speed Table
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=2), ETH_DST=OFOxmEthDstVer13(value=76:57:be:71:ac:c6), ETH_SRC=OFOxmEthSrcVer13(value=de:e9:31:a4:bb:99), ETH_TYPE=OFOxmEthTypeVer13(value=0x806)}
+TimeStamp: 1.500624152359E9 Speed: 0.0Mbps
+TimeStamp: 1.500624153389E9 Speed: 3.2621360129421944E-4Mbps
+TimeStamp: 1.500624153876E9 Speed: 0.0Mbps
+TimeStamp: 1.500624154383E9 Speed: 0.0Mbps
+TimeStamp: 1.500624154895E9 Speed: 0.0Mbps
+TimeStamp: 1.500624156405E9 Speed: 0.0Mbps
+TimeStamp: 1.500624157601E9 Speed: 0.0Mbps
+Remove task from taskmap OFOxmList{IN_PORT=OFOxmInPortVer13(value=2), ETH_DST=OFOxmEthDstVer13(value=76:57:be:71:ac:c6), ETH_SRC=OFOxmEthSrcVer13(value=de:e9:31:a4:bb:99), ETH_TYPE=OFOxmEthTypeVer13(value=0x806)}
+Remove task from scheduledMap OFOxmList{IN_PORT=OFOxmInPortVer13(value=2), ETH_DST=OFOxmEthDstVer13(value=76:57:be:71:ac:c6), ETH_SRC=OFOxmEthSrcVer13(value=de:e9:31:a4:bb:99), ETH_TYPE=OFOxmEthTypeVer13(value=0x806)}
+remove net.floodlightcontroller.netmonitor.PollingTask@270350e2
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=5, durationNsec=367000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002e000000, packetCount=0x0000000000000e7b, byteCount=0x00000000004cd07a, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x800, ip_proto=0x11, ipv4_src=10.0.0.2, ipv4_dst=10.0.0.7, udp_src=47690, udp_dst=9999), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+5034106
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=9, durationNsec=877000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002e000000, packetCount=0x0000000000001bd4, byteCount=0x0000000000939e98, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x800, ip_proto=0x11, ipv4_src=10.0.0.2, ipv4_dst=10.0.0.7, udp_src=47690, udp_dst=9999), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+9674392
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=14, durationNsec=886000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002e000000, packetCount=0x0000000000002e53, byteCount=0x0000000000f5bc4a, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x800, ip_proto=0x11, ipv4_src=10.0.0.2, ipv4_dst=10.0.0.7, udp_src=47690, udp_dst=9999), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+16104522
+2017-07-21 16:02:50.251 INFO  [n.f.l.i.LinkDiscoveryManager] Sending LLDP packets out of all the enabled ports
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=19, durationNsec=896000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002e000000, packetCount=0x0000000000003d9f, byteCount=0x000000000146e172, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x800, ip_proto=0x11, ipv4_src=10.0.0.2, ipv4_dst=10.0.0.7, udp_src=47690, udp_dst=9999), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+21422450
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=24, durationNsec=906000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002e000000, packetCount=0x0000000000004a82, byteCount=0x00000000018b3d9c, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x800, ip_proto=0x11, ipv4_src=10.0.0.2, ipv4_dst=10.0.0.7, udp_src=47690, udp_dst=9999), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+25902492
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=29, durationNsec=916000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002e000000, packetCount=0x0000000000005750, byteCount=0x0000000001cf2a60, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x800, ip_proto=0x11, ipv4_src=10.0.0.2, ipv4_dst=10.0.0.7, udp_src=47690, udp_dst=9999), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+30354016
+2017-07-21 16:03:05.261 INFO  [n.f.l.i.LinkDiscoveryManager] Sending LLDP packets out of all the enabled ports
+2017-07-21 16:03:05.321 INFO  [n.f.t.TopologyManager] Recomputing topology due to: link-discovery-updates
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=34, durationNsec=926000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002e000000, packetCount=0x000000000000645f, byteCount=0x0000000002146ff2, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x800, ip_proto=0x11, ipv4_src=10.0.0.2, ipv4_dst=10.0.0.7, udp_src=47690, udp_dst=9999), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+34893810
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=39, durationNsec=937000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002e000000, packetCount=0x000000000000741a, byteCount=0x000000000267e1ec, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x800, ip_proto=0x11, ipv4_src=10.0.0.2, ipv4_dst=10.0.0.7, udp_src=47690, udp_dst=9999), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+40362476
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x806)}
+Adding OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x806)}
+FLOW_MOD message
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=2), ETH_DST=OFOxmEthDstVer13(value=76:57:be:71:ac:c6), ETH_SRC=OFOxmEthSrcVer13(value=de:e9:31:a4:bb:99), ETH_TYPE=OFOxmEthTypeVer13(value=0x806)}
+Adding OFOxmList{IN_PORT=OFOxmInPortVer13(value=2), ETH_DST=OFOxmEthDstVer13(value=76:57:be:71:ac:c6), ETH_SRC=OFOxmEthSrcVer13(value=de:e9:31:a4:bb:99), ETH_TYPE=OFOxmEthTypeVer13(value=0x806)}
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x806)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=0, durationNsec=999000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002f000000, packetCount=0x0000000000000001, byteCount=0x000000000000002a, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x806), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+42
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=2), ETH_DST=OFOxmEthDstVer13(value=76:57:be:71:ac:c6), ETH_SRC=OFOxmEthSrcVer13(value=de:e9:31:a4:bb:99), ETH_TYPE=OFOxmEthTypeVer13(value=0x806)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=0, durationNsec=997000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x0020000030000000, packetCount=0x0000000000000001, byteCount=0x000000000000002a, match=OFMatchV3Ver13(in_port=2, eth_dst=76:57:be:71:ac:c6, eth_src=de:e9:31:a4:bb:99, eth_type=0x806), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=1, maxLen=65535)])])]
+1
+1
+42
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x806)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=1, durationNsec=509000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002f000000, packetCount=0x0000000000000001, byteCount=0x000000000000002a, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x806), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+42
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=2), ETH_DST=OFOxmEthDstVer13(value=76:57:be:71:ac:c6), ETH_SRC=OFOxmEthSrcVer13(value=de:e9:31:a4:bb:99), ETH_TYPE=OFOxmEthTypeVer13(value=0x806)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=1, durationNsec=507000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x0020000030000000, packetCount=0x0000000000000001, byteCount=0x000000000000002a, match=OFMatchV3Ver13(in_port=2, eth_dst=76:57:be:71:ac:c6, eth_src=de:e9:31:a4:bb:99, eth_type=0x806), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=1, maxLen=65535)])])]
+1
+1
+42
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x806)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=2, durationNsec=18000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002f000000, packetCount=0x0000000000000001, byteCount=0x000000000000002a, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x806), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+42
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=2), ETH_DST=OFOxmEthDstVer13(value=76:57:be:71:ac:c6), ETH_SRC=OFOxmEthSrcVer13(value=de:e9:31:a4:bb:99), ETH_TYPE=OFOxmEthTypeVer13(value=0x806)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=2, durationNsec=17000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x0020000030000000, packetCount=0x0000000000000001, byteCount=0x000000000000002a, match=OFMatchV3Ver13(in_port=2, eth_dst=76:57:be:71:ac:c6, eth_src=de:e9:31:a4:bb:99, eth_type=0x806), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=1, maxLen=65535)])])]
+1
+1
+42
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x806)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=2, durationNsec=529000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002f000000, packetCount=0x0000000000000001, byteCount=0x000000000000002a, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x806), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+42
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=2), ETH_DST=OFOxmEthDstVer13(value=76:57:be:71:ac:c6), ETH_SRC=OFOxmEthSrcVer13(value=de:e9:31:a4:bb:99), ETH_TYPE=OFOxmEthTypeVer13(value=0x806)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=2, durationNsec=527000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x0020000030000000, packetCount=0x0000000000000001, byteCount=0x000000000000002a, match=OFMatchV3Ver13(in_port=2, eth_dst=76:57:be:71:ac:c6, eth_src=de:e9:31:a4:bb:99, eth_type=0x806), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=1, maxLen=65535)])])]
+1
+1
+42
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=44, durationNsec=946000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002e000000, packetCount=0x0000000000007d3e, byteCount=0x0000000002985ee4, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x800, ip_proto=0x11, ipv4_src=10.0.0.2, ipv4_dst=10.0.0.7, udp_src=47690, udp_dst=9999), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+43540196
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x806)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=4, durationNsec=38000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002f000000, packetCount=0x0000000000000001, byteCount=0x000000000000002a, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x806), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+42
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=2), ETH_DST=OFOxmEthDstVer13(value=76:57:be:71:ac:c6), ETH_SRC=OFOxmEthSrcVer13(value=de:e9:31:a4:bb:99), ETH_TYPE=OFOxmEthTypeVer13(value=0x806)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=4, durationNsec=37000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x0020000030000000, packetCount=0x0000000000000001, byteCount=0x000000000000002a, match=OFMatchV3Ver13(in_port=2, eth_dst=76:57:be:71:ac:c6, eth_src=de:e9:31:a4:bb:99, eth_type=0x806), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=1, maxLen=65535)])])]
+1
+1
+42
+FLOW_REMOVED message
+FLOW_REMOVED message
+remove net.floodlightcontroller.netmonitor.PollingTask@270350e2
+FLOW_REMOVED message
+FLOW_REMOVED message
+Speed Table
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=2), ETH_DST=OFOxmEthDstVer13(value=76:57:be:71:ac:c6), ETH_SRC=OFOxmEthSrcVer13(value=de:e9:31:a4:bb:99), ETH_TYPE=OFOxmEthTypeVer13(value=0x806)}
+TimeStamp: 1.50062419398E9 Speed: 0.0Mbps
+TimeStamp: 1.500624194982E9 Speed: 3.353293100400148E-4Mbps
+TimeStamp: 1.500624195492E9 Speed: 0.0Mbps
+TimeStamp: 1.500624196002E9 Speed: 0.0Mbps
+TimeStamp: 1.500624196512E9 Speed: 0.0Mbps
+TimeStamp: 1.500624198023E9 Speed: 0.0Mbps
+TimeStamp: 1.500624198992E9 Speed: 0.0Mbps
+Remove task from taskmap OFOxmList{IN_PORT=OFOxmInPortVer13(value=2), ETH_DST=OFOxmEthDstVer13(value=76:57:be:71:ac:c6), ETH_SRC=OFOxmEthSrcVer13(value=de:e9:31:a4:bb:99), ETH_TYPE=OFOxmEthTypeVer13(value=0x806)}
+Remove task from scheduledMap OFOxmList{IN_PORT=OFOxmInPortVer13(value=2), ETH_DST=OFOxmEthDstVer13(value=76:57:be:71:ac:c6), ETH_SRC=OFOxmEthSrcVer13(value=de:e9:31:a4:bb:99), ETH_TYPE=OFOxmEthTypeVer13(value=0x806)}
+FLOW_REMOVED message
+FLOW_REMOVED message
+remove net.floodlightcontroller.netmonitor.PollingTask@97ddb6c5
+FLOW_REMOVED message
+FLOW_REMOVED message
+FLOW_REMOVED message
+FLOW_REMOVED message
+Speed Table
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x806)}
+TimeStamp: 1.500624193967E9 Speed: 0.0Mbps
+TimeStamp: 1.500624194971E9 Speed: 3.346613717475394E-4Mbps
+TimeStamp: 1.500624195479E9 Speed: 0.0Mbps
+TimeStamp: 1.500624195989E9 Speed: 0.0Mbps
+TimeStamp: 1.500624196499E9 Speed: 0.0Mbps
+TimeStamp: 1.500624198009E9 Speed: 0.0Mbps
+TimeStamp: 1.500624198996E9 Speed: 0.0Mbps
+Remove task from taskmap OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x806)}
+Remove task from scheduledMap OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x806)}
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=47, durationNsec=457000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002e000000, packetCount=0x00000000000082ed, byteCount=0x0000000002b68536, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x800, ip_proto=0x11, ipv4_src=10.0.0.2, ipv4_dst=10.0.0.7, udp_src=47690, udp_dst=9999), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+45516086
+2017-07-21 16:03:20.274 INFO  [n.f.l.i.LinkDiscoveryManager] Sending LLDP packets out of all the enabled ports
+2017-07-21 16:03:20.356 INFO  [n.f.t.TopologyManager] Recomputing topology due to: link-discovery-updates
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=48, durationNsec=716000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002e000000, packetCount=0x000000000000859e, byteCount=0x0000000002c4cc24, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x800, ip_proto=0x11, ipv4_src=10.0.0.2, ipv4_dst=10.0.0.7, udp_src=47690, udp_dst=9999), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+46451748
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=49, durationNsec=346000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002e000000, packetCount=0x000000000000869f, byteCount=0x0000000002ca1f72, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x800, ip_proto=0x11, ipv4_src=10.0.0.2, ipv4_dst=10.0.0.7, udp_src=47690, udp_dst=9999), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+46800754
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=49, durationNsec=856000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002e000000, packetCount=0x0000000000008788, byteCount=0x0000000002cef370, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x800, ip_proto=0x11, ipv4_src=10.0.0.2, ipv4_dst=10.0.0.7, udp_src=47690, udp_dst=9999), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+47117168
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=50, durationNsec=366000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002e000000, packetCount=0x000000000000886b, byteCount=0x0000000002d3a79a, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x800, ip_proto=0x11, ipv4_src=10.0.0.2, ipv4_dst=10.0.0.7, udp_src=47690, udp_dst=9999), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+47425434
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=50, durationNsec=876000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002e000000, packetCount=0x0000000000008936, byteCount=0x0000000002d7dc74, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x800, ip_proto=0x11, ipv4_src=10.0.0.2, ipv4_dst=10.0.0.7, udp_src=47690, udp_dst=9999), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+47701108
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=51, durationNsec=386000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002e000000, packetCount=0x0000000000008a18, byteCount=0x0000000002dc8b50, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x800, ip_proto=0x11, ipv4_src=10.0.0.2, ipv4_dst=10.0.0.7, udp_src=47690, udp_dst=9999), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+48008016
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=51, durationNsec=896000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002e000000, packetCount=0x0000000000008b40, byteCount=0x0000000002e2ad80, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x800, ip_proto=0x11, ipv4_src=10.0.0.2, ipv4_dst=10.0.0.7, udp_src=47690, udp_dst=9999), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+48409984
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=52, durationNsec=406000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002e000000, packetCount=0x0000000000008c93, byteCount=0x0000000002e9b3ca, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x800, ip_proto=0x11, ipv4_src=10.0.0.2, ipv4_dst=10.0.0.7, udp_src=47690, udp_dst=9999), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+48870346
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=52, durationNsec=916000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002e000000, packetCount=0x0000000000008dc8, byteCount=0x0000000002f01af0, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x800, ip_proto=0x11, ipv4_src=10.0.0.2, ipv4_dst=10.0.0.7, udp_src=47690, udp_dst=9999), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+49289968
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=53, durationNsec=426000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002e000000, packetCount=0x0000000000009020, byteCount=0x0000000002fc89c0, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x800, ip_proto=0x11, ipv4_src=10.0.0.2, ipv4_dst=10.0.0.7, udp_src=47690, udp_dst=9999), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+50104768
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=53, durationNsec=936000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002e000000, packetCount=0x000000000000914a, byteCount=0x000000000302b68c, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x800, ip_proto=0x11, ipv4_src=10.0.0.2, ipv4_dst=10.0.0.7, udp_src=47690, udp_dst=9999), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+50509452
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=54, durationNsec=446000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002e000000, packetCount=0x000000000000923d, byteCount=0x000000000307bf96, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x800, ip_proto=0x11, ipv4_src=10.0.0.2, ipv4_dst=10.0.0.7, udp_src=47690, udp_dst=9999), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+50839446
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=54, durationNsec=956000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002e000000, packetCount=0x00000000000093b0, byteCount=0x00000000030f6fa0, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x800, ip_proto=0x11, ipv4_src=10.0.0.2, ipv4_dst=10.0.0.7, udp_src=47690, udp_dst=9999), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+51343264
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=55, durationNsec=466000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002e000000, packetCount=0x0000000000009513, byteCount=0x000000000316caca, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x800, ip_proto=0x11, ipv4_src=10.0.0.2, ipv4_dst=10.0.0.7, udp_src=47690, udp_dst=9999), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+51825354
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=55, durationNsec=976000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002e000000, packetCount=0x0000000000009681, byteCount=0x00000000031e604e, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x800, ip_proto=0x11, ipv4_src=10.0.0.2, ipv4_dst=10.0.0.7, udp_src=47690, udp_dst=9999), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+52322382
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=56, durationNsec=487000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002e000000, packetCount=0x00000000000097fd, byteCount=0x0000000003264016, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x800, ip_proto=0x11, ipv4_src=10.0.0.2, ipv4_dst=10.0.0.7, udp_src=47690, udp_dst=9999), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+52838422
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=57, durationNsec=996000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002e000000, packetCount=0x0000000000009b96, byteCount=0x00000000033955b4, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x800, ip_proto=0x11, ipv4_src=10.0.0.2, ipv4_dst=10.0.0.7, udp_src=47690, udp_dst=9999), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+54089140
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=58, durationNsec=756000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002e000000, packetCount=0x0000000000009bf7, byteCount=0x00000000033b5842, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x800, ip_proto=0x11, ipv4_src=10.0.0.2, ipv4_dst=10.0.0.7, udp_src=47690, udp_dst=9999), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+54220866
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=59, durationNsec=267000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002e000000, packetCount=0x0000000000009bf7, byteCount=0x00000000033b5842, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x800, ip_proto=0x11, ipv4_src=10.0.0.2, ipv4_dst=10.0.0.7, udp_src=47690, udp_dst=9999), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+54220866
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=59, durationNsec=776000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002e000000, packetCount=0x0000000000009bf7, byteCount=0x00000000033b5842, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x800, ip_proto=0x11, ipv4_src=10.0.0.2, ipv4_dst=10.0.0.7, udp_src=47690, udp_dst=9999), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+54220866
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=60, durationNsec=286000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002e000000, packetCount=0x0000000000009bf7, byteCount=0x00000000033b5842, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x800, ip_proto=0x11, ipv4_src=10.0.0.2, ipv4_dst=10.0.0.7, udp_src=47690, udp_dst=9999), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+54220866
+polling for OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+[OFFlowStatsEntryVer13(tableId=0x0, durationSec=61, durationNsec=796000000, priority=1, idleTimeout=5, hardTimeout=0, flags=[SEND_FLOW_REM], cookie=0x002000002e000000, packetCount=0x0000000000009bf7, byteCount=0x00000000033b5842, match=OFMatchV3Ver13(in_port=1, eth_dst=de:e9:31:a4:bb:99, eth_src=76:57:be:71:ac:c6, eth_type=0x800, ip_proto=0x11, ipv4_src=10.0.0.2, ipv4_dst=10.0.0.7, udp_src=47690, udp_dst=9999), instructions=[OFInstructionApplyActionsVer13(actions=[OFActionOutputVer13(port=2, maxLen=65535)])])]
+1
+1
+54220866
+2017-07-21 16:03:35.292 INFO  [n.f.l.i.LinkDiscoveryManager] Sending LLDP packets out of all the enabled ports
+2017-07-21 16:03:35.389 INFO  [n.f.t.TopologyManager] Recomputing topology due to: link-discovery-updates
+2017-07-21 16:03:35.389 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:04, port=3, activeSince=Fri Jul 21 16:03:13 CST 2017, lastSeen=Fri Jul 21 16:03:13 CST 2017], AttachmentPoint [sw=00:00:00:00:00:00:00:02, port=2, activeSince=Fri Jul 21 16:03:13 CST 2017, lastSeen=Fri Jul 21 16:03:13 CST 2017]]  newmap {00:00:00:00:00:00:00:01=AttachmentPoint [sw=00:00:00:00:00:00:00:02, port=2, activeSince=Fri Jul 21 16:03:13 CST 2017, lastSeen=Fri Jul 21 16:03:13 CST 2017]} 
+2017-07-21 16:03:35.390 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:05, port=2, activeSince=Fri Jul 21 16:02:19 CST 2017, lastSeen=Fri Jul 21 16:02:23 CST 2017]]  newmap null 
+2017-07-21 16:03:35.390 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:04, port=2, activeSince=Fri Jul 21 16:02:20 CST 2017, lastSeen=Fri Jul 21 16:02:24 CST 2017]]  newmap null 
+2017-07-21 16:03:35.391 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:05, port=3, activeSince=Fri Jul 21 16:02:20 CST 2017, lastSeen=Fri Jul 21 16:02:24 CST 2017]]  newmap null 
+2017-07-21 16:03:35.391 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:07, port=2, activeSince=Fri Jul 21 16:03:13 CST 2017, lastSeen=Fri Jul 21 16:03:13 CST 2017]]  newmap null 
+2017-07-21 16:03:35.410 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:06, port=2, activeSince=Fri Jul 21 16:02:20 CST 2017, lastSeen=Fri Jul 21 16:02:24 CST 2017]]  newmap null 
+2017-07-21 16:03:35.410 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:07, port=3, activeSince=Fri Jul 21 16:02:20 CST 2017, lastSeen=Fri Jul 21 16:02:24 CST 2017]]  newmap null 
+2017-07-21 16:03:35.411 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:06, port=3, activeSince=Fri Jul 21 16:02:20 CST 2017, lastSeen=Fri Jul 21 16:02:24 CST 2017]]  newmap null 
+FLOW_REMOVED message
+FLOW_REMOVED message
+FLOW_REMOVED message
+FLOW_REMOVED message
+Speed Table
+OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+TimeStamp: 1.500624152379E9 Speed: 0.0Mbps
+TimeStamp: 1.500624153389E9 Speed: 6.141924810469267Mbps
+TimeStamp: 1.500624153892E9 Speed: 9.352110941918298Mbps
+TimeStamp: 1.500624154401E9 Speed: 9.263212999902104Mbps
+TimeStamp: 1.500624154911E9 Speed: 7.242666802100889Mbps
+TimeStamp: 1.500624155421E9 Speed: 6.7314197337172965Mbps
+TimeStamp: 1.500624155931E9 Speed: 6.688815811351997Mbps
+TimeStamp: 1.500624156442E9 Speed: 6.760768208397468Mbps
+TimeStamp: 1.500624157952E9 Speed: 7.058002693583019Mbps
+TimeStamp: 1.500624162462E9 Speed: 8.23110600410154Mbps
+TimeStamp: 1.500624167471E9 Speed: 10.269722370452774Mbps
+TimeStamp: 1.500624172481E9 Speed: 8.491701413369896Mbps
+TimeStamp: 1.500624177491E9 Speed: 7.153759694256201Mbps
+TimeStamp: 1.500624182501E9 Speed: 7.10822196961862Mbps
+TimeStamp: 1.500624187511E9 Speed: 7.249172069687324Mbps
+TimeStamp: 1.500624192522E9 Speed: 8.73065787956546Mbps
+TimeStamp: 1.500624197531E9 Speed: 5.075216787897609Mbps
+TimeStamp: 1.500624200041E9 Speed: 6.2976573944458725Mbps
+TimeStamp: 1.500624201301E9 Speed: 5.940710031967763Mbps
+TimeStamp: 1.500624201931E9 Speed: 4.431823094360416Mbps
+TimeStamp: 1.500624202441E9 Speed: 4.963356955557374Mbps
+TimeStamp: 1.500624202951E9 Speed: 4.835545188461475Mbps
+TimeStamp: 1.500624203461E9 Speed: 4.324298120077883Mbps
+TimeStamp: 1.500624203971E9 Speed: 4.814243227278826Mbps
+TimeStamp: 1.500624204481E9 Speed: 6.305380510064303Mbps
+TimeStamp: 1.500624204991E9 Speed: 7.221364840918239Mbps
+TimeStamp: 1.500624205501E9 Speed: 6.582306005438749Mbps
+TimeStamp: 1.500624206011E9 Speed: 12.781176709589804Mbps
+TimeStamp: 1.500624206521E9 Speed: 6.347984432429603Mbps
+TimeStamp: 1.500624207031E9 Speed: 5.176376567383871Mbps
+TimeStamp: 1.500624207541E9 Speed: 7.903027598763028Mbps
+TimeStamp: 1.500624208051E9 Speed: 7.562192684610696Mbps
+TimeStamp: 1.500624208561E9 Speed: 7.79651779284978Mbps
+TimeStamp: 1.500624209072E9 Speed: 8.078905406261125Mbps
+TimeStamp: 1.500624210581E9 Speed: 6.630711453045999Mbps
+TimeStamp: 1.500624211341E9 Speed: 1.3865894910836156Mbps
+TimeStamp: 1.500624211852E9 Speed: 0.0Mbps
+TimeStamp: 1.500624212361E9 Speed: 0.0Mbps
+TimeStamp: 1.50062421287E9 Speed: 0.0Mbps
+TimeStamp: 1.500624214381E9 Speed: 0.0Mbps
+TimeStamp: 1.500624215589E9 Speed: 0.0Mbps
+Remove task from taskmap OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+Remove task from scheduledMap OFOxmList{IN_PORT=OFOxmInPortVer13(value=1), ETH_DST=OFOxmEthDstVer13(value=de:e9:31:a4:bb:99), ETH_SRC=OFOxmEthSrcVer13(value=76:57:be:71:ac:c6), ETH_TYPE=OFOxmEthTypeVer13(value=0x800), IP_PROTO=OFOxmIpProtoVer13(value=0x11), IPV4_SRC=OFOxmIpv4SrcVer13(value=10.0.0.2), IPV4_DST=OFOxmIpv4DstVer13(value=10.0.0.7), UDP_SRC=OFOxmUdpSrcVer13(value=47690), UDP_DST=OFOxmUdpDstVer13(value=9999)}
+remove net.floodlightcontroller.netmonitor.PollingTask@53b9b587
+FLOW_REMOVED message
+2017-07-21 16:03:35.911 INFO  [n.f.t.TopologyManager] Recomputing topology due to: link-discovery-updates
+2017-07-21 16:03:35.924 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:04, port=1, activeSince=Fri Jul 21 16:03:08 CST 2017, lastSeen=Fri Jul 21 16:03:35 CST 2017]]  newmap null 
+2017-07-21 16:03:35.924 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:02, port=2, activeSince=Fri Jul 21 16:03:07 CST 2017, lastSeen=Fri Jul 21 16:03:30 CST 2017]]  newmap null 
+2017-07-21 16:03:35.925 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:04, port=1, activeSince=Fri Jul 21 16:03:07 CST 2017, lastSeen=Fri Jul 21 16:03:27 CST 2017]]  newmap null 
+2017-07-21 16:03:35.925 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:04, port=1, activeSince=Fri Jul 21 16:03:07 CST 2017, lastSeen=Fri Jul 21 16:03:25 CST 2017]]  newmap null 
+2017-07-21 16:03:35.926 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:04, port=1, activeSince=Fri Jul 21 16:03:08 CST 2017, lastSeen=Fri Jul 21 16:03:24 CST 2017]]  newmap null 
+2017-07-21 16:03:35.926 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:04, port=1, activeSince=Fri Jul 21 16:03:08 CST 2017, lastSeen=Fri Jul 21 16:03:25 CST 2017]]  newmap null 
+2017-07-21 16:03:35.926 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:02, port=2, activeSince=Fri Jul 21 16:03:13 CST 2017, lastSeen=Fri Jul 21 16:03:13 CST 2017]]  newmap null 
+2017-07-21 16:03:35.927 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:04, port=1, activeSince=Fri Jul 21 16:03:07 CST 2017, lastSeen=Fri Jul 21 16:03:34 CST 2017]]  newmap null 
+2017-07-21 16:03:39.891 INFO  [n.f.c.i.OFChannelHandler] [[00:00:00:00:00:00:00:07(0x0) from 127.0.0.1:60742]] Disconnected connection
+2017-07-21 16:03:39.897 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:07 outPort=1, dst=00:00:00:00:00:00:00:03, inPort=3, latency=215]
+2017-07-21 16:03:39.897 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:03 outPort=3, dst=00:00:00:00:00:00:00:07, inPort=1, latency=48]
+2017-07-21 16:03:39.927 INFO  [n.f.c.i.OFChannelHandler] [[00:00:00:00:00:00:00:01(0x0) from 127.0.0.1:60744]] Disconnected connection
+2017-07-21 16:03:39.928 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:03 outPort=1, dst=00:00:00:00:00:00:00:01, inPort=2, latency=64]
+2017-07-21 16:03:39.928 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:02 outPort=1, dst=00:00:00:00:00:00:00:01, inPort=1, latency=338]
+2017-07-21 16:03:39.928 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:01 outPort=1, dst=00:00:00:00:00:00:00:02, inPort=1, latency=248]
+2017-07-21 16:03:39.928 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:01 outPort=2, dst=00:00:00:00:00:00:00:03, inPort=1, latency=37]
+2017-07-21 16:03:39.929 INFO  [n.f.t.TopologyManager] Recomputing topology due to: link-discovery-updates
+2017-07-21 16:03:39.943 ERROR [n.f.t.TopologyManager] Error in topology instance task thread
+java.lang.NullPointerException: null
+	at net.floodlightcontroller.topology.TopologyInstance.computeBroadcastPortsPerArchipelago(TopologyInstance.java:1403) ~[bin/:na]
+	at net.floodlightcontroller.topology.TopologyInstance.compute(TopologyInstance.java:178) ~[bin/:na]
+	at net.floodlightcontroller.topology.TopologyManager.createNewInstance(TopologyManager.java:1014) ~[bin/:na]
+	at net.floodlightcontroller.topology.TopologyManager.updateTopology(TopologyManager.java:207) ~[bin/:na]
+	at net.floodlightcontroller.topology.TopologyManager$UpdateTopologyWorker.run(TopologyManager.java:178) ~[bin/:na]
+	at net.floodlightcontroller.core.util.SingletonTask$SingletonTaskWorker.run(SingletonTask.java:69) [bin/:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_131]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+2017-07-21 16:03:39.950 INFO  [n.f.c.i.OFChannelHandler] [[00:00:00:00:00:00:00:04(0x0) from 127.0.0.1:60746]] Disconnected connection
+2017-07-21 16:03:39.950 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:02 outPort=2, dst=00:00:00:00:00:00:00:04, inPort=1, latency=64]
+2017-07-21 16:03:39.951 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:04 outPort=1, dst=00:00:00:00:00:00:00:02, inPort=2, latency=29]
+2017-07-21 16:03:39.982 INFO  [n.f.c.i.OFChannelHandler] [[00:00:00:00:00:00:00:06(0x0) from 127.0.0.1:60748]] Disconnected connection
+2017-07-21 16:03:39.982 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:06 outPort=1, dst=00:00:00:00:00:00:00:03, inPort=2, latency=77]
+2017-07-21 16:03:39.983 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:03 outPort=2, dst=00:00:00:00:00:00:00:06, inPort=1, latency=45]
+2017-07-21 16:03:40.7 INFO  [n.f.c.i.OFChannelHandler] [[00:00:00:00:00:00:00:03(0x0) from 127.0.0.1:60750]] Disconnected connection
+2017-07-21 16:03:40.26 INFO  [n.f.c.i.OFChannelHandler] [[00:00:00:00:00:00:00:05(0x0) from 127.0.0.1:60752]] Disconnected connection
+2017-07-21 16:03:40.26 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:05 outPort=1, dst=00:00:00:00:00:00:00:02, inPort=3, latency=73]
+2017-07-21 16:03:40.27 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:02 outPort=3, dst=00:00:00:00:00:00:00:05, inPort=1, latency=72]
+2017-07-21 16:03:40.51 INFO  [n.f.c.i.OFChannelHandler] [[00:00:00:00:00:00:00:02(0x0) from 127.0.0.1:60754]] Disconnected connection
+2017-07-21 16:03:40.444 INFO  [n.f.t.TopologyManager] Recomputing topology due to: link-discovery-updates
+2017-07-21 16:03:40.445 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:03, port=2, activeSince=Fri Jul 21 16:03:39 CST 2017, lastSeen=Fri Jul 21 16:03:39 CST 2017]]  newmap null 
+2017-07-21 16:03:40.445 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:06, port=1, activeSince=Fri Jul 21 16:03:38 CST 2017, lastSeen=Fri Jul 21 16:03:38 CST 2017]]  newmap null 

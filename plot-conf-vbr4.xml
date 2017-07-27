@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plot-configuration>
+	<utilization>
+	</utilization>
+
+	<overhead>
+	</overhead>
+
+	<entropy>
+		<num>1</num>
+		<group>
+			<num>5</num>
+			<sample>
+				<filepath>./plotdata_tmp/payless-10M-15M-vbr_004_1.csv</filepath>
+				<algorithm>payless</algorithm>
+			</sample>
+			<sample>
+				<filepath>./plotdata_tmp/adarate-vbr_004_2.csv</filepath>
+				<algorithm>adarate</algorithm>
+			</sample>
+			<sample>
+				<filepath>./plotdata_tmp/polling-vbr_004_5.csv</filepath>
+				<algorithm>polling</algorithm>
+			</sample>
+			<sample>
+				<filepath>./plotdata_tmp/adarateR-vbr_004_6.csv</filepath>
+				<algorithm>adarateR</algorithm>
+			</sample>
+			<sample>
+				<filepath>./plotdata_tmp/SWT-vbr_004_6.csv</filepath>
+				<algorithm>SWT</algorithm>
+			</sample>
+		</group>
+	</entropy>
+
+	<mutual>
+		<num>1</num>
+		<group>
+			<num>5</num>
+			<sample>
+				<filepath>./plotdata_tmp/payless-10M-15M-vbr_004_1.csv</filepath>
+				<algorithm>payless</algorithm>
+			</sample>
+			<sample>
+				<filepath>./plotdata_tmp/adarate-vbr_004_2.csv</filepath>
+				<algorithm>adarate</algorithm>
+			</sample>
+			<compare_sample>
+				<filepath>./plotdata_tmp/polling-vbr_004_5.csv</filepath>
+				<algorithm>polling</algorithm>
+			</compare_sample>
+			<sample>
+				<filepath>./plotdata_tmp/adarateR-vbr_004_6.csv</filepath>
+				<algorithm>adarateR</algorithm>
+			</sample>
+			<sample>
+				<filepath>./plotdata_tmp/SWT-vbr_004_6.csv</filepath>
+				<algorithm>SWT</algorithm>
+			</sample>
+		</group>
+	</mutual>
+</plot-configuration>
