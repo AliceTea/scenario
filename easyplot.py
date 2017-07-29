@@ -22,9 +22,9 @@ class Exp():
     def __init__(self):
         self.Name = "Expdata"
         self.dataMap = {}
-        self.lineMap = {'SWT':'-','elastic':'-','myself':'-','polling':':','payless':'-','adarateR':'-','adarate':'-'}
-        self.colorMap = {'SWT':'b','elastic':'g','myself':'r','polling':'k','payless':'k','adarateR':'r','adarate':'b'}
-        self.colorMap = {'SWT':'b','elastic':'b','myself':'b','polling':'b','payless':'b','adarateR':'b','adarate':'b'}
+        self.lineMap = {'SWT':'-x','elastic':'-','myself':'-','polling':':','payless':'-','adarateR':'-','adarate':'-','ARIMA':'-o'}
+        self.colorMap = {'SWT':'b','elastic':'g','myself':'r','polling':'k','payless':'k','adarateR':'r','adarate':'b','ARIMA':'r'}
+        # self.colorMap = {'SWT':'b','elastic':'b','myself':'b','polling':'b','payless':'b','adarateR':'b','adarate':'b'}
 
     def parselog(self, filename = ''):
         if filename == '':
@@ -500,10 +500,10 @@ if __name__ == '__main__':
 #    exp.parselog(sys.argv[1])
 #    exp.basicshow()
 #    exp.csvplot(sys.argv[1])
-    # exp.multiplot()
+    exp.multiplot()
     # exp.entgraplot(sys.argv[1])
     # exp.entplot(sys.argv[1])
-    exp.overheadplot(sys.argv[1])
-    exp.errorplot(sys.argv[1])
+    # exp.overheadplot(sys.argv[1])
+    # exp.errorplot(sys.argv[1])
     # exp.balancedentplot(sys.argv[1])
 
