@@ -9,26 +9,22 @@
 	<entropy>
 		<num>1</num>
 		<group>
-			<num>5</num>
+			<num>4</num>
 			<sample>
-				<filepath>./plotdata_tmp/payless-10M-15M-vbr_004_1.csv</filepath>
+				<filepath>./plotdata_tmp/payless-vbr_004_1.csv</filepath>
 				<algorithm>payless</algorithm>
 			</sample>
 			<sample>
-				<filepath>./plotdata_tmp/adarate-vbr_004_2.csv</filepath>
+				<filepath>./plotdata_tmp/ARIMA-vbr_004_4.csv</filepath>
 				<algorithm>adarate</algorithm>
 			</sample>
 			<sample>
-				<filepath>./plotdata_tmp/polling-vbr_004_5.csv</filepath>
+				<filepath>./plotdata_tmp/polling-vbr_004_6.csv</filepath>
 				<algorithm>polling</algorithm>
 			</sample>
 			<sample>
-				<filepath>./plotdata_tmp/adarateR-vbr_004_6.csv</filepath>
+				<filepath>./plotdata_tmp/elastic-vbr_004_5.csv</filepath>
 				<algorithm>adarateR</algorithm>
-			</sample>
-			<sample>
-				<filepath>./plotdata_tmp/SWT-vbr_004_6.csv</filepath>
-				<algorithm>SWT</algorithm>
 			</sample>
 		</group>
 	</entropy>
@@ -36,26 +32,22 @@
 	<mutual>
 		<num>1</num>
 		<group>
-			<num>5</num>
+			<num>4</num>
 			<sample>
-				<filepath>./plotdata_tmp/payless-10M-15M-vbr_004_1.csv</filepath>
+				<filepath>./plotdata_tmp/payless-vbr_004_1.csv</filepath>
 				<algorithm>payless</algorithm>
 			</sample>
 			<sample>
-				<filepath>./plotdata_tmp/adarate-vbr_004_2.csv</filepath>
+				<filepath>./plotdata_tmp/ARIMA-vbr_004_4.csv</filepath>
 				<algorithm>adarate</algorithm>
 			</sample>
 			<compare_sample>
-				<filepath>./plotdata_tmp/polling-vbr_004_5.csv</filepath>
+				<filepath>./plotdata_tmp/polling-vbr_004_6.csv</filepath>
 				<algorithm>polling</algorithm>
 			</compare_sample>
 			<sample>
-				<filepath>./plotdata_tmp/adarateR-vbr_004_6.csv</filepath>
+				<filepath>./plotdata_tmp/elastic-vbr_004_5.csv</filepath>
 				<algorithm>adarateR</algorithm>
-			</sample>
-			<sample>
-				<filepath>./plotdata_tmp/SWT-vbr_004_6.csv</filepath>
-				<algorithm>SWT</algorithm>
 			</sample>
 		</group>
 	</mutual>

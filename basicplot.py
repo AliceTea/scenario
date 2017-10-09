@@ -22,8 +22,8 @@ class Exp():
     def __init__(self):
         self.Name = "Expdata"
         self.dataMap = {}
-        self.lineMap = {'arimarate':'-','SWT':'-','elastic':'-','myself':'-','polling':':','payless':'-','adarateR':'-','adarate':'-','ARIMA':'-'}
-        self.colorMap = {'arimarate':'r','SWT':'b','elastic':'g','myself':'r','polling':'k','payless':'y','adarateR':'r','adarate':'b','ARIMA':'r'}
+        self.lineMap = {'SWT':'-','elastic':'-','myself':'-','polling':':','payless':'-','adarateR':'-','adarate':'-','ARIMA':'-o'}
+        self.colorMap = {'SWT':'r','elastic':'g','myself':'r','polling':'k','payless':'k','adarateR':'r','adarate':'b','ARIMA':'r'}
         # self.colorMap = {'SWT':'b','elastic':'b','myself':'b','polling':'b','payless':'b','adarateR':'b','adarate':'b'}
 
     def parselog(self, filename = ''):
@@ -102,11 +102,7 @@ class Exp():
         for line in lines:
             x,y = line.split(" ",1)
             ts.append((float(x)-primitive)*(1000000000))
-            ts.append((float(x)-primitive)*(1000000000))
             bps.append(float(y))
-            bps.append(float(y))
-        del ts[len(ts)-1]
-        del bps[0]
 
         labelname = re.findall("\w+-",filename)[0]
         labelname = re.findall("\w+",labelname)[0]
@@ -130,7 +126,7 @@ class Exp():
 
         #plot configuration
         pl.xlabel("time(seconds)")
-        pl.ylabel("link utilization(Mbps)")
+        pl.ylabel("traffic rate(Mbps)")
         pl.axis([0,60,0,40])
         pl.legend(loc="left upper",fancybox='false',fontsize=10)
         pl.show()
@@ -389,8 +385,8 @@ class Exp():
         root = tree.getroot()
         
 
-        width = 3
-        gap = 3
+        width = 1
+        gap = 2
         start = 0
         entropy = root.find('mutual')
         flag = True
