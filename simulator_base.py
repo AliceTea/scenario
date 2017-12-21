@@ -7,6 +7,8 @@ Created on Tue Dec 19 16:53:35 2017
 
 import sys
 import re
+import algs
+
 
 def measure(duration,timelist,statslist,method):
     ret=1
@@ -17,9 +19,9 @@ def measure(duration,timelist,statslist,method):
     elif method=='adarate':
         pass
     elif method=='fuzz_arima':
-        pass
+        ret = algs.fuzz_arima(timelist,statslist)
     elif method=='payless':
-        pass
+        ret = algs.adarate(duration,timelist,statslist)
         
     return ret
 
@@ -30,7 +32,7 @@ cnt=0
 duration=1
 statslist=[]
 timelist=[]
-method='defualt'
+method='payless'
 line=file.readline()
 loop=0
 count=0
@@ -52,3 +54,4 @@ while line != "":
     statslist.append(count)
     timelist.append(ts)
     count=0
+
