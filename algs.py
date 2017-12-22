@@ -9,16 +9,17 @@ def fuzz_arima(timelist,statslist):
     pass
 
 def payless(duration,timelist,statslist):
-    pass
+    if len(statslist) < 1:
+        return duration
+    if statslist[len(statslist)-1] > 5000000:
+        return max(duration/3,1)
+    elif statslist[len(statslist)-1] < 3000000:
+        return min(duration*2,100)
+    else:
+        return duration
 
 def swd(duration,timelist,statslist):
     pass
 
 def adarate(duration,timelist,statslist):
-    if statslist[len(statslist)-1] > 1000000:
-        return max(duration/3,1)
-    elif statslist[len(statslist)-1] < 500000:
-        return min(duration*2,5)
-    else:
-        return duration
     pass
