@@ -11,20 +11,7 @@ import algs
 import matplotlib.pyplot as plt
 import math
 import pandas as pd
-import numpy as np
-
-def interpolate(method='default',timelist=[],ratelist=[]):
-    i=0
-    while i < timelist[len(timelist)-1]:
-        if timelist[i] > i+1:
-            timelist.insert(i,i+1)
-            ratelist.insert(i,np.nan)
-        else:
-            i=i+1
-    ratelist=pd.Series(data=ratelist)
-    ratelist.interpolate('cubic')
-    print ratelist
-    plt.plot(ratelist)
+from scipy import interpolate
 
 
 def predict(timelist,statslist,method,*args):
@@ -53,8 +40,8 @@ def measure(duration,timelist,statslist,method,*args):
             ret = algs.adarate(duration,timelist,statslist,10)
         else:
             ret = algs.adarate(duration,timelist,statslist,args[0])
-    elif method=='fuzz_arima':
-        ret = algs.fuzz_arima(timelist,statslist)
+    elif method=='sw_arima':
+        ret = algs.sw_arima(timelist,pd.Series(statslist))
     elif method=='payless':
         ret = algs.payless(duration,timelist,statslist)
         
@@ -74,6 +61,8 @@ def errorate(timelist=[],ratelist=[],realratelist=[]):
             ratelist.insert(i,ratelist[i-1])
         else:
             i=i+1
+
+#    plt.plot(timelist[0:2645],realratelist)
     i=0
     error=0
     while i<len(realratelist):
@@ -115,17 +104,22 @@ def method_alltest(methods):
     lB=[] #list of error rate
     ret=tuple()
     if methods == 'payless':
-        pass
+        i=5
+        while i<10:
+            i=i*2
+            ret=method_test(methods,i)
+            lA.append(ret[0])
+            lB.append(ret[1])
     elif methods == 'SWT':
-        i=1
-        while i<100:
+        i=5
+        while i<10:
             i=i*2
             ret=method_test(methods,i)
             lA.append(ret[0])
             lB.append(ret[1])
     elif methods == 'adarate':
-        i=1
-        while i<100:
+        i=5
+        while i<10:
             i=i*2
             ret=method_test(methods,i)
             lA.append(ret[0])
@@ -137,7 +131,9 @@ def method_alltest(methods):
     return lA,lB
             
 def method_test(methods,*args):
-    file = open(r'/media/jason/Seagate Backup Plus Drive/实验数据/2017年12月11日UTC.datx','r+')
+    #E:\我的坚果云\Documents\学生生涯\学校\实验报告\实验数据
+    file = open(unicode(r'E:\我的坚果\Documents\学生生涯\学校\实验报告\实验数据\2049B.datx','utf-8'),'r+')
+    #file = open(r'/media/jason/Seagate Backup Plus Drive/实验数据/2017年12月11日UTC.datx','r+')
     ts=[]
     duration=1
     statslist=[]
@@ -163,14 +159,19 @@ def method_test(methods,*args):
             data=re.findall('\d+',line)
             if(data==[]):
                 break
-            count=count+int(data[1])
+#            count=count+int(data[1])#normal mode
+            count=float(data[1])#sw-arima mode
         ts=ts+duration
         ratelist.append(count/duration)
         statslist.append(count)
         timelist.append(ts)
         count=0
-            
-    file = open(r'/media/jason/Seagate Backup Plus Drive/实验数据/2017年12月11日UTC.datx','r+')
+    plt.plot(timelist,ratelist,label=methods)
+#    interpolation('default',timelist,ratelist)
+
+    #E:\我的坚果云\Documents\学生生涯\学校\实验报告\实验数据
+    file = open(unicode(r'E:\我的坚果\Documents\学生生涯\学校\实验报告\实验数据\2049B.datx','utf-8'),'r+')
+    #file = open(r'/media/jason/Seagate Backup Plus Drive/实验数据/2017年12月11日UTC.datx','r+')
     ts=[]
     duration=1
     statslist=[]
@@ -197,7 +198,9 @@ def method_test(methods,*args):
         realratelist.append(count/duration)
         statslist.append(count)
         count=0
-    
+    errorate(timelist, ratelist, realratelist)
+    plt.plot(timelist,realratelist,'-.',label="real")
+
 #    print 'overhead:'+str(overhead(ratelist))
 #    print 'error:'+str(errorate(timelist,ratelist,realratelist))
     return overhead(ratelist),errorate(timelist,ratelist,realratelist)
@@ -206,6 +209,7 @@ def method_test(methods,*args):
 #method_test('SWT')
 #method_test('payless')
 
-method_alltest('adarate')
-method_alltest('SWT')
+#method_test('adarate')
+method_test('sw_arima')
+#method_alltest('SWT')
 plt.show()

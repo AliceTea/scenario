@@ -4,15 +4,80 @@ Created on Thu Dec 21 17:30:09 2017
 
 @author: jason
 """
-
+import arima
 import math
+import pandas as pd
 
 ws_max=3
 ws=1
+ws_init=50
 
-def fuzz_arima(timelist,statslist):
-    
-    pass
+
+step=1
+model_arima = None
+predict = []
+
+
+def sw_arima(timelist,statslist):
+    global model_arima
+    global ws
+    global ws_init
+    global step
+    global predict
+    ret = 1
+    statslist.index = pd.to_datetime(statslist.index,unit='ms')
+    if model_arima != None:
+        if predict != [] and (abs(statslist[len(statslist)-1]-predict[len(predict)-1]))/statslist[len(statslist)-1] > 0.2 and step == 1:
+            ws = 1
+            ret = 1
+            step = 1
+            predict=[]
+        else:
+            ws = ws + 1
+            print("ws:"+str(ws))
+            print("data length:"+str(len(statslist[len(statslist)-ws+1:len(statslist)])))
+            param = arima.getparam(statslist[len(statslist)-ws+1:len(statslist)])
+            if param != [] :
+                model_arima = arima.getmodel(statslist[len(statslist)-ws+1:len(statslist)])
+                if (abs(statslist[len(statslist)-1]-predict[len(predict)-1]))/statslist[len(statslist)-1] > 0.2:
+                    step = step - 1
+                elif step < 5:
+                    step = step + 1
+                predict = model_arima.forecast(step)[0]
+                if step > 1:
+                    for i in predict[0:len(predict)-2]:
+                        statslist.append(i)
+                        ws = ws + 1
+                        print('find valid video segment')
+                ret = step
+            else:
+                step = 1
+                ret = 1
+                predict=[]
+                model_arima = None
+        pass
+    else:
+        if ws >= ws_init:
+            print('go init')
+            print('ws:'+str(ws))
+            param = arima.getparam(statslist[len(statslist)-ws+1:len(statslist)])
+            if param != []:
+                
+                model_arima = arima.getmodel(statslist[len(statslist)-ws+1:len(statslist)])
+                step = 1
+                predict = model_arima.forecast(step)[0]
+            else:
+                model_arima = None
+                ws = 1
+                step = 1
+                predict = []
+        else:
+            print(ws)
+            ws = ws + 1
+            ret = 1
+            predict = []
+    print("final data length:"+str(len(statslist)))
+    return ret
 
 def payless(duration,timelist,statslist):
     if len(statslist) < 1:
