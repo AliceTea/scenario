@@ -22,6 +22,7 @@ class vlcthread(threading.Thread):
 
     def run(self):
         self.hosts[1].cmd('vlc-wrapper udp://@:' + self.dst_port + "&")
+        time.sleep(10)
         self.hosts[0].cmd('vlc-wrapper ' \
                      + "-vvv " + " " \
                      + self.source_add + " " \
