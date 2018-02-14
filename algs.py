@@ -9,74 +9,91 @@ import math
 import pandas as pd
 
 ws_max=3
-ws=1
+#ws=1#nodrmal
+ws=0#sw-arima
 ws_init=50
 
 
 step=1
 model_arima = None
 predict = []
+predict_num = 0
 
-
-def sw_arima(timelist,statslist):
+def sw_arima(ts,tp,source_tp):
     global model_arima
     global ws
     global ws_init
     global step
     global predict
+    global predict_num
+    print(predict_num)
     ret = 1
-    statslist.index = pd.to_datetime(statslist.index,unit='ms')
+    tp.index = pd.to_datetime(tp.index,unit='ms')
     if model_arima != None:
-        if predict != [] and (abs(statslist[len(statslist)-1]-predict[len(predict)-1]))/statslist[len(statslist)-1] > 0.2 and step == 1:
-            ws = 1
-            ret = 1
+        #assert(predict != [])
+        if (abs(tp[len(tp)-1]-predict[len(predict)-1]))/tp[len(tp)-1] > 0.2:
+            model_arima = None
+            ws = 0
             step = 1
             predict=[]
+            return step
         else:
-            ws = ws + 1
+            window=[]
+            window=tp[len(tp)-ws:len(tp)]
             print("ws:"+str(ws))
-            print("data length:"+str(len(statslist[len(statslist)-ws+1:len(statslist)])))
-            param = arima.getparam(statslist[len(statslist)-ws+1:len(statslist)])
+            print("data length:"+str(len(window)))
+            param = arima.getparam(window)
+            ws = ws + step
             if param != [] :
-                model_arima = arima.getmodel(statslist[len(statslist)-ws+1:len(statslist)])
-                if (abs(statslist[len(statslist)-1]-predict[len(predict)-1]))/statslist[len(statslist)-1] > 0.2:
-                    step = step - 1
-                elif step < 5:
+                model_arima = arima.getmodel(window)
+                if step < 3:
                     step = step + 1
-                predict = model_arima.forecast(step)[0]
-                if step > 1:
-                    for i in predict[0:len(predict)-2]:
-                        statslist.append(i)
-                        ws = ws + 1
-                        print('find valid video segment')
-                ret = step
+                forecast = model_arima.forecast(step)[0]
+                if len(forecast) > 1:
+                    for i in forecast[0:len(forecast)-1]:
+                        source_tp.append(i)
+                        predict_num = predict_num + 1
+                    predict=[]
+                    predict.append(forecast[len(forecast)-1])
+                else:
+                    predict=forecast
+                return step
             else:
                 step = 1
-                ret = 1
+                ws = 0
                 predict=[]
                 model_arima = None
+                return step
         pass
     else:
-        if ws >= ws_init:
+        if ws > 40:
             print('go init')
-            print('ws:'+str(ws))
-            param = arima.getparam(statslist[len(statslist)-ws+1:len(statslist)])
+            window=[]
+            window=tp[len(tp)-ws:len(tp)]
+            print len(tp)
+            print("ws:"+str(ws))
+            print("data length:"+str(len(window)))
+            param = arima.getparam(window)
             if param != []:
-                
-                model_arima = arima.getmodel(statslist[len(statslist)-ws+1:len(statslist)])
-                step = 1
-                predict = model_arima.forecast(step)[0]
+                model_arima = arima.getmodel(window)
+                forecast = model_arima.forecast(step)[0]
+                predict=forecast
+                ws = ws + step
+                return step
             else:
                 model_arima = None
-                ws = 1
+                ws = 0
                 step = 1
                 predict = []
+                return step
         else:
             print(ws)
             ws = ws + 1
             ret = 1
+            step = 1
             predict = []
-    print("final data length:"+str(len(statslist)))
+            return step
+    print("final data length:"+str(len(tp)))
     return ret
 
 def payless(duration,timelist,statslist):

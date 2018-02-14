@@ -26,6 +26,7 @@ def predict(timelist,statslist,method,*args):
         pass
     return ret
 
+
 def measure(duration,timelist,statslist,method,*args):
     ret=1
     if method=='default':
@@ -41,7 +42,7 @@ def measure(duration,timelist,statslist,method,*args):
         else:
             ret = algs.adarate(duration,timelist,statslist,args[0])
     elif method=='sw_arima':
-        ret = algs.sw_arima(timelist,pd.Series(statslist))
+        ret = algs.sw_arima(timelist,pd.Series(statslist),statslist)
     elif method=='payless':
         ret = algs.payless(duration,timelist,statslist)
         
@@ -132,7 +133,8 @@ def method_alltest(methods):
             
 def method_test(methods,*args):
     #E:\我的坚果云\Documents\学生生涯\学校\实验报告\实验数据
-    file = open(unicode(r'E:\我的坚果\Documents\学生生涯\学校\实验报告\实验数据\2049B.datx','utf-8'),'r+')
+    #file = open(unicode(r'E:\我的坚果\Documents\学生生涯\学校\实验报告\实验数据\2049B.datx','utf-8'),'r+')
+    file = open(unicode(r'/home/jason/Downloads/2049B.datx','utf-8'),'r+')
     #file = open(r'/media/jason/Seagate Backup Plus Drive/实验数据/2017年12月11日UTC.datx','r+')
     ts=[]
     duration=1
@@ -147,11 +149,6 @@ def method_test(methods,*args):
     while line != "":
     #    cnt=cnt+1
     #    print cnt
-        if len(args)!=1:
-            duration=measure(duration,timelist,statslist,method)
-        else:
-            duration=measure(duration,timelist,statslist,method,args[0])
-        assert duration>0,'duration is illedga'
         loop=duration
         while loop>0:
             loop=loop-1
@@ -162,15 +159,27 @@ def method_test(methods,*args):
 #            count=count+int(data[1])#normal mode
             count=float(data[1])#sw-arima mode
         ts=ts+duration
-        ratelist.append(count/duration)
+        #ratelist.append(count/duration)#normal mode
+        ratelist.append(count)#normal mode
         statslist.append(count)
         timelist.append(ts)
         count=0
-    plt.plot(timelist,ratelist,label=methods)
+        if len(args)!=1:
+            duration=measure(duration,timelist,statslist,method)
+        else:
+            duration=measure(duration,timelist,statslist,method,args[0])
+        assert duration>0,'duration is illedga'
+
+    #plt.plot(timelist,ratelist,label=methods)
+    plt.plot(statslist,'*-',label=methods)
+    tp=[]
+    for i in stateslist:
+        tp.append(i)
 #    interpolation('default',timelist,ratelist)
 
     #E:\我的坚果云\Documents\学生生涯\学校\实验报告\实验数据
-    file = open(unicode(r'E:\我的坚果\Documents\学生生涯\学校\实验报告\实验数据\2049B.datx','utf-8'),'r+')
+    #file = open(unicode(r'E:\我的坚果\Documents\学生生涯\学校\实验报告\实验数据\2049B.datx','utf-8'),'r+')
+    file = open(unicode(r'/home/jason/Downloads/2049B.datx','utf-8'),'r+')
     #file = open(r'/media/jason/Seagate Backup Plus Drive/实验数据/2017年12月11日UTC.datx','r+')
     ts=[]
     duration=1
@@ -199,7 +208,8 @@ def method_test(methods,*args):
         statslist.append(count)
         count=0
     errorate(timelist, ratelist, realratelist)
-    plt.plot(timelist,realratelist,'-.',label="real")
+    plt.plot(realratelist,'.-',label="real")
+    plt.legend()
 
 #    print 'overhead:'+str(overhead(ratelist))
 #    print 'error:'+str(errorate(timelist,ratelist,realratelist))
