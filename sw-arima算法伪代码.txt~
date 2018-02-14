@@ -1,0 +1,62 @@
+#sw-arima算法伪代码
+
+输入：
+tp
+ts
+t0'
+duration
+输出：
+t0
+
+初始化：
+ws<--1
+step<--1
+
+
+if 存在ARIMA模型：
+	if 该模型的预测值有效：
+		重新对tp进行建模
+		if 建模失败：
+			丢弃该模型
+			step <-- 1
+			ws <-- 1
+			t0 <-- t0' + step*duration
+			return t0
+		if step < 5:
+			step <-- step + 1
+		forecast <-- arima.forecast(step)
+		if forecast.length > 2:
+			tp.append(forecast[0:forecast.length-1])
+			predict<--forecast[forecast.length-1]
+		else:
+			predict<--forecast
+		ws<--ws+step
+		t0<--t0'+step*duration
+		return t0
+	else:
+		丢弃该模型
+		step <-- 1
+		ws <-- 1
+		t0 <-- t0' + step*duration
+		return t0		
+elif 无模型：
+	if ws > 50:
+		对tp进行建模
+		if 建模失败：
+			step <-- 1
+			ws <-- 50
+			t0 <-- t0' + step*duration
+			return t0
+		forecast <-- arima.forecast(step)
+		predict<--forecast
+		ws<--ws+step
+		t0<--t0'+step*duration
+		return t0
+	else:
+		step <-- 1
+		ws <-- ws + 1
+		t0 <-- t0' + step*duration
+		return t0
+		
+			
+		
